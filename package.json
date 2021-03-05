@@ -4,6 +4,13 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "autoprefixer": "^9.8.6",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
