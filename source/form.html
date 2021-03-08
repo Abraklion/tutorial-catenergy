@@ -21,13 +21,17 @@
 
           <div class="header__top">
 
-            <a class="header__logo logo">
-              <img src="#" width="33" height="37" alt="Логотип Cat Energy">
+            <a class="logo">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" type="image/svg+xml">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" type="image/svg+xml">
+                <img class="logo__img" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+              </picture>
             </a><!-- /.logo -->
 
-            <div class="header__title logo logo--text">
-              <svg class="logo__icon" aria-hidden="true">
-                <use xlink:href="img/symbol/sprite.svg#"/>
+            <div class="header__logo-center logo">
+              <svg class="logo__icon" aria-hidden="true" width="101" height="18">
+                <use xlink:href="img/sprite.svg#logo-text"/>
               </svg>
             </div>
 
@@ -59,7 +63,7 @@
 
     <main>
 
-      <h1 class="Подбор программы">Подбор программы</h1>
+      <h1 class="form-title container">Подбор программы</h1>
 
       <section class="questionnaire">
         <div class="container">
@@ -68,7 +72,7 @@
 
           <form class="form" action="form.html" method="get">
 
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--basis_fifty">
               <legend class="visually-hidden">Информация с котике</legend>
               <ul class="form__item">
                 <li class="form__list">
@@ -86,7 +90,7 @@
               </ul>
             </fieldset><!-- /.form__group -->
 
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--basis_fifty">
               <legend class="visually-hidden">Программа питания</legend>
               <ul class="form__item">
                 <li class="form__list">
@@ -106,7 +110,7 @@
 
             <fieldset class="form__group">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <ul class="form__item">
+              <ul class="form__item form__item--input">
                 <li class="form__list">
                   <label class="form__label" for="email">E-mail:*</label>
                   <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" autocomplete="off">
@@ -122,7 +126,7 @@
               <legend class="form__legend">Комментарий</legend>
               <ul class="form__item">
                 <li class="form__list">
-                  <label class="form__label" for="comment">Расскажите обо всех повадках кота</label>
+                  <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
                   <textarea class="form__input form__input--textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </li>
               </ul>
@@ -130,7 +134,7 @@
 
             <fieldset class="form__group">
               <legend class="form__legend">Дополнительно</legend>
-              <ul class="form__item">
+              <ul class="form__item form__item--checkbox">
                 <li class="form__list">
                   <input class="visually-hidden form__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
                   <label class="form__label" for="sweetener" >Сахарозаменитель</label>
@@ -150,9 +154,9 @@
               </ul>
             </fieldset><!-- /.form__group -->
 
-            <div class="form__group">
+            <div class="form__button-box">
               <button class="form__btn button">Отправить заявку</button>
-              <small class="form__text">* — Обязательные поля</small>
+              <small class="form__hint">* — Обязательные поля</small>
             </div><!-- /.form__group -->
 
           </form><!-- /.form -->
@@ -161,17 +165,17 @@
       </section><!-- /.questionnaire -->
 
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts__container">
 
           <div class="contacts__inner">
             <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
 
-        </div><!-- /.container -->
+        </div><!-- /.contacts -->
 
         <div class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUQyCqjtB" width="100%" height="400" allowfullscreen="true" aria-label="Интерактивная карта"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUQyCqjtB" width="100%" height="362" allowfullscreen="true" aria-label="Интерактивная карта"></iframe>
         </div><!-- /.map -->
 
       </section><!-- /.contacts -->
@@ -182,9 +186,9 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="footer__logo logo logo--text" href="#">
-            <svg class="logo__icon" aria-hidden="true">
-              <use xlink:href="img/symbol/sprite.svg#"/>
+          <a class="footer__logo logo" href="#">
+            <svg class="logo__icon" aria-hidden="true" width="128" height="24">
+              <use xlink:href="img/sprite.svg#logo-text"/>
             </svg>
           </a><!-- /.logo -->
 
@@ -195,24 +199,24 @@
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="VK">
-                  <svg class="social__icon" aria-hidden="true">
-                    <use xlink:href="img/symbol/sprite.svg#"/>
+                  <svg class="social__icon" width="23" height="13" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#vk"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Instagram">
-                  <svg class="social__icon" aria-hidden="true">
-                    <use xlink:href="img/symbol/sprite.svg#"/>
+                  <svg class="social__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#instagram"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Facebook">
-                  <svg class="social__icon" aria-hidden="true">
-                    <use xlink:href="img/symbol/sprite.svg#"/>
+                  <svg class="social__icon" width="22" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#fb"/>
                   </svg>
                 </a>
               </li>
@@ -224,8 +228,8 @@
           <p class="copyright">
             HTML Academy
             <a href="" class="copyright__link" aria-label="Логотип HTML Academy">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="img/symbol/sprite.svg#"/>
+              <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#html-academy"/>
               </svg>
             </a>
           </p><!-- /.copyright -->

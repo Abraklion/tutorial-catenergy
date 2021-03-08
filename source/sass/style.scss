@@ -1,5 +1,36 @@
-$color: blue;
+@charset "UTF-8";
 
-body{
-  background-color: $color;
-}
+@import "variables";
+@import "mixins";
+
+/* fonts */
+@import "fonts";
+
+/* Normalize.css */
+@import "normalize";
+
+/* Default styles */
+@import "core";
+
+/* Blocks */
+@import "blocks/page";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/button";
+@import "blocks/social";
+@import "blocks/map";
+@import "blocks/copyright";
+@import "blocks/more";
+@import "blocks/cart";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/programs";
+@import "blocks/instruction";
+@import "blocks/example";
+@import "blocks/contacts";
+@import "blocks/products";
+@import "blocks/additional-products";
+@import "blocks/questionnaire";
+@import "blocks/form";
+@import "blocks/footer";
+

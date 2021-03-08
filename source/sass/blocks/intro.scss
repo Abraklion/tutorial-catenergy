@@ -1,0 +1,32 @@
+
+.intro{
+  background-image: url(../img/index-background-info.jpg),
+                    linear-gradient(180deg,$basic-green-dark 305px,$white 305px);
+  background-position: top center, top center;
+  background-size: 320px 305px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.intro__container{
+  min-height: 480px;
+
+  background-image: url(../img/index-can-mobile.png);
+  background-position: bottom 40px center;
+  background-repeat: no-repeat;
+}
+
+.intro__inner{
+
+}
+
+.intro__subtitle{
+
+}
+
+.intro__img{
+
+}
+
+.intro__link{
+
+}

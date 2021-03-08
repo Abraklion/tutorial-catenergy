@@ -1,0 +1,23 @@
+
+.footer{
+  background-color: $basic-grey;
+}
+
+.footer__inner{
+
+  @media (min-width:$viewport-tablet) {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+.footer__logo{
+
+}
+
+.footer__social{
+
+}

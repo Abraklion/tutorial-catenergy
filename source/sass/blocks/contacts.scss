@@ -1,0 +1,35 @@
+
+.contacts{
+
+}
+
+.contacts__container{
+
+  @media (min-width:$viewport-desktop) {
+    position: relative;
+  }
+}
+
+.contacts__inner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: $white;
+
+  @media (min-width:$viewport-desktop) {
+    position: absolute;
+    top: 95px;
+    left: 20px;
+  }
+}
+
+.contacts__title{
+
+}
+
+.contacts__address{
+
+  @media (min-width:$viewport-tablet) {
+    justify-self: end;
+  }
+}

@@ -1,0 +1,40 @@
+
+.programs{
+
+}
+
+.programs__inner{
+
+}
+
+.programs__list{
+  @include list;
+
+  @media (min-width:$viewport-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__item{
+  background-color: $basic-grey;
+
+  margin: 0 0 20px 0;
+
+  @media (min-width:$viewport-desktop) {
+    flex-basis: 570px;
+  }
+
+}
+
+.programs__title{
+
+}
+
+.programs__text{
+
+}
+
+.programs__link{
+
+}

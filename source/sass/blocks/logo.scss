@@ -1,0 +1,26 @@
+
+.logo{
+  display: block;
+}
+
+.logo__icon{
+  display: block;
+
+  fill: $almost-black;
+}
+
+.logo__img{
+  display: block;
+  width: 33px;
+  height: 37px;
+
+    @media (min-width:$viewport-tablet) {
+      width: 174px;
+      height: 51px;
+    }
+
+    @media (min-width:$viewport-desktop) {
+      width: 202px;
+      height: 59px;
+    }
+}

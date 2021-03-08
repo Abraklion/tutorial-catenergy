@@ -1,0 +1,47 @@
+
+.cart{
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width:$viewport-tablet) {
+    flex-direction: column;
+  }
+}
+
+.cart__header{
+  flex-basis: 50%;
+}
+
+.cart__name{
+
+}
+
+.cart__list{
+  @include list;
+}
+
+.cart__item{
+
+}
+
+.cart__item-name{
+
+}
+
+.cart__item-number{
+
+}
+
+.cart__btn{
+  flex-basis: 100%;
+
+}
+
+.cart__footer{
+  flex-basis: 50%;
+  order: -1;
+}
+
+.cart__img{
+
+}
