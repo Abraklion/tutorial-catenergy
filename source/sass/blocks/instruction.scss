@@ -1,0 +1,53 @@
+
+.instruction{
+
+}
+
+.instruction__inner{
+
+}
+
+.instruction__title{
+
+}
+
+.instruction__list{
+  @include list;
+  display: grid;
+  grid-gap: 20px;
+
+  @media (min-width:$viewport-tablet) {
+    grid-template-columns: repeat(2,249px);
+    grid-gap: 37px 137px;
+  }
+
+  @media (min-width:$viewport-desktop) {
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 79px;
+  }
+}
+
+.instruction__item{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-column-gap: 20px;
+
+  @media (min-width:$viewport-tablet) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 31px;
+  }
+}
+
+.instruction__box-img{
+  background-color: $basic-green;
+}
+
+.instruction__img{
+
+}
+
+.instruction__text{
+
+}
+
+

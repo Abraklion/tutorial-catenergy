@@ -21,13 +21,17 @@
 
           <div class="header__top">
 
-            <a class="header__logo logo">
-              <img src="#" width="33" height="37" alt="Логотип Cat Energy">
+            <a class="logo">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" type="image/svg+xml">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" type="image/svg+xml">
+                <img class="logo__img" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+              </picture>
             </a><!-- /.logo -->
 
-            <div class="header__title logo logo--text">
-              <svg class="logo__icon" aria-hidden="true">
-                <use xlink:href="img/symbol/sprite.svg#"/>
+            <div class="header__logo-center logo">
+              <svg class="logo__icon" aria-hidden="true" width="101" height="18">
+                <use xlink:href="img/sprite.svg#logo-text"/>
               </svg>
             </div>
 
@@ -59,7 +63,7 @@
 
     <main>
 
-      <h1 class="catalog-title">Каталог продукции</h1>
+      <h1 class="catalog-title container">Каталог продукции</h1>
 
       <section class="products">
         <div class="container">
@@ -297,7 +301,7 @@
                   <p class="more__title">Показать еще 100500 товаров</p>
                   <div class="more__text">На самом деле вкусов гораздо больше!</div>
 
-                  <button class="more__button button button--bg_grey"></button>
+                  <button class="more__button button button--bg_grey">показать все</button>
                 </div><!-- /.more -->
 
               </li>
@@ -363,18 +367,17 @@
       </section><!-- /.additional-products -->
 
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts__container">
 
           <div class="contacts__inner">
             <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
 
-        </div><!-- /.container -->
+        </div><!-- /.contacts -->
 
         <div class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUQyCqjtB" width="100%" height="400" allowfullscreen="true"
-                  aria-label="Интерактивная карта"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUQyCqjtB" width="100%" height="362" allowfullscreen="true" aria-label="Интерактивная карта"></iframe>
         </div><!-- /.map -->
 
       </section><!-- /.contacts -->
@@ -385,9 +388,9 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="footer__logo logo logo--text" href="#">
-            <svg class="logo__icon" aria-hidden="true">
-              <use xlink:href="img/symbol/sprite.svg#"/>
+          <a class="footer__logo logo" href="#">
+            <svg class="logo__icon" aria-hidden="true" width="128" height="24">
+              <use xlink:href="img/sprite.svg#logo-text"/>
             </svg>
           </a><!-- /.logo -->
 
@@ -398,24 +401,24 @@
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="VK">
-                  <svg class="social__icon" aria-hidden="true">
-                    <use xlink:href="img/symbol/sprite.svg#"/>
+                  <svg class="social__icon" width="23" height="13" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#vk"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Instagram">
-                  <svg class="social__icon" aria-hidden="true">
-                    <use xlink:href="img/symbol/sprite.svg#"/>
+                  <svg class="social__icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#instagram"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Facebook">
-                  <svg class="social__icon" aria-hidden="true">
-                    <use xlink:href="img/symbol/sprite.svg#"/>
+                  <svg class="social__icon" width="22" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#fb"/>
                   </svg>
                 </a>
               </li>
@@ -427,8 +430,8 @@
           <p class="copyright">
             HTML Academy
             <a href="" class="copyright__link" aria-label="Логотип HTML Academy">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="img/symbol/sprite.svg#"/>
+              <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#html-academy"/>
               </svg>
             </a>
           </p><!-- /.copyright -->

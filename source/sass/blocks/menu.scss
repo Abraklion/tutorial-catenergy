@@ -1,0 +1,16 @@
+
+.menu{
+  @include list;
+
+  @media (min-width:$viewport-tablet) {
+    display: flex;
+  }
+}
+
+.menu__item{
+
+}
+
+.menu__link{
+
+}

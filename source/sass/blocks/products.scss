@@ -1,0 +1,27 @@
+
+.products{
+
+}
+
+.products__inner{
+
+}
+
+.products__list{
+  @include list;
+
+  @media (min-width:$viewport-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 59px 60px;
+  }
+
+  @media (min-width:$viewport-desktop) {
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 63px 80px;
+  }
+}
+
+.products__item{
+
+}

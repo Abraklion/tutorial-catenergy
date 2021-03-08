@@ -1,0 +1,60 @@
+
+//-----===== Базовые настройки ====-----//
+
+html {
+  font-size: $font-size-basic;
+  line-height: $line-height-basic;
+}
+
+body {
+  font-style: $font-style-basic;
+  font-weight: $font-weight-basic;
+  font-family: $font-family-basic;
+  color: $black;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-width: 320px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img{
+  max-width:100%;
+  height: auto;
+}
+
+//-----===== Служебные класы - начало ====-----//
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width:$viewport-tablet) {
+    max-width: 748px;
+  }
+
+  @media (min-width:$viewport-desktop) {
+    max-width: 1260px;
+  }
+}
+
+//-----===== Служебные класы - конец ====-----//

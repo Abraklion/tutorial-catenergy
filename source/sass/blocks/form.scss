@@ -1,0 +1,101 @@
+
+.form{
+
+  @media (min-width:$viewport-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__group{
+
+  @media (min-width:$viewport-desktop) {
+    flex-basis: 100%;
+  }
+
+  &--basis_fifty{
+
+    @media (min-width:$viewport-desktop) {
+      flex-basis: 46.63%;
+    }
+  }
+}
+
+.form__legend{
+
+}
+
+.form__item{
+  @include list;
+  display: grid;
+
+  &--input{
+
+    @media (min-width:$viewport-desktop) {
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 78px;
+    }
+  }
+
+  &--checkbox{
+
+    @media (min-width:$viewport-tablet) {
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 32px 124px;
+    }
+
+    @media (min-width:$viewport-desktop) {
+      grid-template-columns: repeat(4,1fr);
+      grid-column-gap: 78px;
+    }
+  }
+
+}
+
+.form__list{
+
+}
+
+.form__label{
+
+}
+
+.form__input{
+
+  &--email{
+
+  }
+
+  &--tel{
+
+  }
+
+  &--textarea{
+
+  }
+}
+
+.form__radio{
+
+}
+
+.form__checkbox{
+
+}
+
+.form__button-box{
+
+}
+
+.form__btn{
+
+}
+
+.form__hint{
+  display: block;
+
+  @media (min-width:$viewport-tablet) {
+    display: inline-block;
+  }
+}

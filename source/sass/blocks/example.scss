@@ -1,0 +1,58 @@
+
+.example{
+
+}
+
+.example__inner{
+
+
+  @media (min-width:$viewport-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 650px;
+    grid-column-gap: 134px;
+  }
+}
+
+.example__description{
+
+}
+
+.example__title{
+
+}
+
+.example__text{
+
+}
+
+.example__stats{
+
+  @media (min-width:$viewport-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width:$viewport-desktop) {
+    flex-direction: column;
+  }
+}
+
+.example__stats-inner{
+  display: flex;
+}
+
+.example__stats-numbers{
+
+}
+
+.example__stats-name {
+
+}
+
+.example__stats-text{
+
+}
+
+.example__cat{
+
+}
