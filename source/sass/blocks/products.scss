@@ -24,4 +24,41 @@
 
 .products__item{
 
+  @media (max-width:$viewport-only-mobile) {
+    position: relative;
+
+    padding: 19px 0 25px 0;
+
+    &::after{
+      content: '';
+
+      width: 100vw;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+
+      border-bottom: 1px solid $light-tele-grey;
+
+      transform: translateX(-50%);
+    }
+
+    &:first-child{
+
+      &::before{
+        content: '';
+
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        top: 0;
+
+        border-bottom: 1px solid $light-tele-grey;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+
+
 }

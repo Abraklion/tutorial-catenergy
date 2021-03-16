@@ -13,35 +13,59 @@
 }
 
 .cart__name{
+  margin: 0 0 18px 0;
 
+  @include font(400,16px,20px,'Oswald');
+
+  text-transform: uppercase;
+  color: $black-brown;
 }
 
 .cart__list{
   @include list;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $dark-bluish-black;
 }
 
 .cart__item{
+  display: flex;
+  justify-content: space-between;
 
+  margin: 0 0 6px 0;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .cart__item-name{
-
+  margin: 0;
 }
 
 .cart__item-number{
-
+  margin: 0;
 }
 
 .cart__btn{
   flex-basis: 100%;
 
+  margin-top: 22px;
 }
 
 .cart__footer{
   flex-basis: 50%;
   order: -1;
+
+  position: relative;
 }
 
 .cart__img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
+  transform: translate(-50%,-50%);
 }

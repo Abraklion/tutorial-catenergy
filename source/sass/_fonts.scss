@@ -1,0 +1,12 @@
+
+//-----===== Подключения шрифтов ====-----//
+
+/* oswald-regular - latin_cyrillic */
+
+@include fontInclude('Oswald','oswald-v36-latin_cyrillic-regular',normal,400,'Oswald regular','Oswald-regular');
+
+/* oswald-500 - latin_cyrillic */
+
+@include fontInclude('Oswald','oswald-v36-latin_cyrillic-500',normal,500,'Oswald medium','Oswald-medium');
+
+// font-family: 'Oswald', sans-serif;

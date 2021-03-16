@@ -48,6 +48,10 @@ img{
   margin: 0 auto;
   box-sizing: border-box;
 
+  @media (max-width:$viewport-only-mobile) {
+    overflow: hidden;
+  }
+
   @media (min-width:$viewport-tablet) {
     max-width: 748px;
   }

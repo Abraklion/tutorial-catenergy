@@ -1,6 +1,32 @@
 
+// ------- Обнуляет списки ------- //
+
 @mixin list{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+// ------- Параметры шрифта ------- //
+
+@mixin font($fw:400,$fs:16px,$lh:24px,$ff:'Arial'){
+  font-weight: $fw;
+  font-size: $fs;
+  font-family: $ff, sans-serif;
+  line-height: $lh;
+}
+
+// ------- Подключения шрифта ------- //
+
+@mixin fontInclude($font_name, $file_name, $style, $weight, $local1,$local2) {
+
+  @font-face {
+    font-family: $font_name;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: local($local1), local($local2),
+          url("../fonts/#{$file_name}.woff") format("woff"),
+          url("../fonts/#{$file_name}.woff2") format("woff2");
+  }
 }

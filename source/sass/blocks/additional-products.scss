@@ -1,9 +1,10 @@
 
 .additional-products{
-
+  overflow-x: hidden;
 }
 
 .additional__inner{
+  padding: 28px 0 35px 0;
 
   @media (min-width:$viewport-desktop) {
     display: flex;
@@ -13,6 +14,11 @@
 }
 
 .additional-products__title{
+  margin: 0 0 35px 0;
+
+  @include font(400,24px,24px,'Oswald');
+
+  color: $black;
 
   @media (min-width:$viewport-desktop) {
     flex-basis: 100%;
@@ -23,12 +29,21 @@
 .additional-products__list{
   @include list;
 
+  margin-bottom: 39px;
+
   @media (min-width:$viewport-desktop) {
     flex-basis: 896px;
   }
 }
 
 .additional-products__item{
+  padding: 13px 0 19px 0;
+
+  border-bottom: 1px solid $gainsboro;
+
+  &:first-child{
+    border-top: 1px solid $gainsboro;
+  }
 
   @media (min-width:$viewport-tablet) {
     display: flex;
@@ -42,6 +57,12 @@
 }
 
 .additional-products__name{
+  margin: 0 0 13px 0;
+
+  @include font(400,16px,16px,'Oswald');
+
+  text-transform: uppercase;
+  color: $black-brown;
 
   @media (min-width:$viewport-desktop) {
     flex-basis: 27.34%;
@@ -54,6 +75,13 @@
   display: flex;
   justify-content: space-between;
 
+  margin: 0 0 15px 0;
+
+  font-size: 14px;
+  line-height: 14px;
+
+  color: $dark-bluish-black;
+
   @media (min-width:$viewport-desktop) {
     flex-basis: 31.81%;
     margin-right: 40px;
@@ -61,14 +89,15 @@
 }
 
 .additional-products__quantity{
-
+  margin: 0;
 }
 
 .additional-products__price{
-
+  margin: 0;
 }
 
 .additional-products__button{
+  width: 100%;
 
   @media (min-width:$viewport-tablet) {
     flex-basis: 100%;
@@ -80,6 +109,10 @@
 }
 
 .additional-products__gift{
+
+  @media (max-width:$viewport-only-mobile) {
+    margin: 0 auto;
+  }
 
   @media (min-width:$viewport-desktop) {
     flex-basis: 245px;

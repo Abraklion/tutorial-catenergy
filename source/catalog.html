@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html class="page" lang="ru">
   <head class="page">
 
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
               </svg>
             </div>
 
-            <button class="header_burger js-burger">
+            <button class="header_burger js-burger" type="button">
               <span class="visually-hidden">Показать меню</span>
             </button>
 
@@ -63,7 +63,7 @@
 
     <main>
 
-      <h1 class="catalog-title container">Каталог продукции</h1>
+      <h1 class="title container">Каталог продукции</h1>
 
       <section class="products">
         <div class="container">
@@ -76,7 +76,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy PRO <span>500 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> PRO <span>500 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -97,7 +97,18 @@
                   <button class="cart__btn button" type="button" aria-label="Заказать Cat Energy PRO 500 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 768px)" 
+                              srcset="img/desktop-cat-energy-chicken-500g.png,
+                                      img/desktop-cat-energy-chicken-500g@2x.png 2x,
+                                      img/desktop-cat-energy-chicken-500g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-chicken-500g.png"
+                           srcset="img/cat-energy-chicken-500g@2x.png 2x,
+                                   img/cat-energy-chicken-500g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -108,7 +119,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy PRO <span>1000 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> PRO <span>1000 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -129,7 +140,23 @@
                   <button class="cart__btn button" type="button" aria-label="Заказать Cat Energy PRO 1000 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 1280px)" 
+                              srcset="img/desktop-cat-energy-chicken-1000g.png,
+                                      img/desktop-cat-energy-chicken-1000g@2x.png 2x,
+                                      img/desktop-cat-energy-chicken-1000g@3x.png 3x"
+                              type="image/jpeg">
+                      <source media="(min-width: 768px)" 
+                              srcset="img/tablet-cat-energy-chicken-1000g.png,
+                                      img/tablet-cat-energy-chicken-1000g@2x.png 2x,
+                                      img/tablet-cat-energy-chicken-1000g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-chicken-1000g.png"
+                           srcset="img/cat-energy-chicken-1000g@2x.png 2x,
+                                   img/cat-energy-chicken-1000g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -140,7 +167,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy PRO <span>500 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> PRO <span>500 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -161,7 +188,18 @@
                   <button class="cart__btn button" type="button" aria-label="Заказать Cat Energy PRO 500 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 768px)" 
+                              srcset="img/desktop-cat-energy-fish-500g.png,
+                                      img/desktop-cat-energy-fish-500g@2x.png 2x,
+                                      img/desktop-cat-energy-fish-500g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-fish-500g.png"
+                           srcset="img/cat-energy-fish-500g@2x.png 2x,
+                                   img/cat-energy-fish-500g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -172,7 +210,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy PRO <span>1000 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> PRO <span>1000 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -193,7 +231,23 @@
                   <button class="cart__btn button" type="button" aria-label="Заказать Cat Energy PRO 1000 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 1280px)" 
+                              srcset="img/desktop-cat-energy-fish-1000g.png,
+                                      img/desktop-cat-energy-fish-1000g@2x.png 2x,
+                                      img/desktop-cat-energy-fish-1000g@3x.png 3x"
+                              type="image/jpeg">
+                      <source media="(min-width: 768px)" 
+                              srcset="img/tablet-cat-energy-fish-1000g.png,
+                                      img/tablet-cat-energy-fish-1000g@2x.png 2x,
+                                      img/tablet-cat-energy-fish-1000g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-fish-1000g.png"
+                           srcset="img/cat-energy-fish-1000g@2x.png 2x,
+                                   img/cat-energy-fish-1000g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -204,7 +258,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy slim <span>500 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> slim <span>500 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -225,7 +279,18 @@
                   <button class="cart__btn button" type="button" aria-label="Заказать Cat Energy slim 500 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 768px)" 
+                              srcset="img/desktop-cat-energy-buckwheat-500g.png,
+                                      img/desktop-cat-energy-buckwheat-500g@2x.png 2x,
+                                      img/desktop-cat-energy-buckwheat-500g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-buckwheat-500g.png"
+                           srcset="img/cat-energy-buckwheat-500g@2x.png 2x,
+                                   img/cat-energy-buckwheat-500g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -236,7 +301,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy slim <span>1000 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> slim <span>1000 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -257,7 +322,23 @@
                   <button class="cart__btn button" type="button" aria-label="Cat Energy slim 1000 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 1280px)" 
+                      srcset="img/desktop-cat-energy-buckwheat-1000g.png,
+                              img/desktop-cat-energy-buckwheat-1000g@2x.png 2x,
+                              img/desktop-cat-energy-buckwheat-1000g@3x.png 3x"
+                      type="image/jpeg">
+                      <source media="(min-width: 768px)" 
+                              srcset="img/tablet-cat-energy-buckwheat-1000g.png,
+                                      img/tablet-cat-energy-buckwheat-1000g@2x.png 2x,
+                                      img/tablet-cat-energy-buckwheat-1000g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-buckwheat-1000g.png"
+                           srcset="img/cat-energy-buckwheat-1000g@2x.png 2x,
+                                   img/cat-energy-buckwheat-1000g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -268,7 +349,7 @@
                 <article class="cart">
 
                   <header class="cart__header">
-                    <h3 class="cart__name">Cat Energy slim <span>500 г</span></h3>
+                    <h3 class="cart__name">Cat Energy<br> slim <span>500 г</span></h3>
 
                     <ul class="cart__list">
                       <li class="cart__item">
@@ -289,7 +370,18 @@
                   <button class="cart__btn button" type="button" aria-label="Заказать Cat Energy slim 500 г">заказать</button>
 
                   <footer class="cart__footer">
-                    <img class="cart__img" src="#" width="68" height="86" alt="">
+                    <picture>
+                      <source media="(min-width: 768px)" 
+                              srcset="img/desktop-cat-energy-rice-500g.png,
+                                      img/desktop-cat-energy-rice-500g@2x.png 2x,
+                                      img/desktop-cat-energy-rice-500g@3x.png 3x"
+                              type="image/jpeg">
+                      <img class="cart__img"
+                           src="img/cat-energy-rice-500g.png"
+                           srcset="img/cat-energy-rice-500g@2x.png 2x,
+                                   img/cat-energy-rice-500g@3x.png 3x"
+                           alt="">
+                    </picture>
                   </footer>
 
                 </article><!-- /.article -->
@@ -299,8 +391,7 @@
 
                 <div class="more">
                   <p class="more__title">Показать еще 100500 товаров</p>
-                  <div class="more__text">На самом деле вкусов гораздо больше!</div>
-
+                  <p class="more__text">На самом деле вкусов гораздо больше!</p>
                   <button class="more__button button button--bg_grey">показать все</button>
                 </div><!-- /.more -->
 
@@ -316,7 +407,7 @@
         <div class="container">
           <div class="additional__inner">
 
-            <h2 class="additional-products__title">Дополнительные товары</h2>
+            <h2 class="additional-products__title line">Дополнительные товары</h2>
 
             <ul class="additional-products__list">
 
@@ -366,11 +457,11 @@
         </div><!-- /.container -->
       </section><!-- /.additional-products -->
 
-      <section class="contacts">
+      <section class="contacts contacts--bg_grey">
         <div class="container contacts__container">
 
-          <div class="contacts__inner">
-            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <div class="contacts__inner contacts__inner">
+            <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
 
@@ -388,7 +479,7 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="footer__logo logo" href="#">
+          <a class="footer__logo logo">
             <svg class="logo__icon" aria-hidden="true" width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-text"/>
             </svg>
@@ -427,14 +518,14 @@
 
           </section><!-- /.social -->
 
-          <p class="copyright">
+          <a class="copyright" href="" aria-label="Логотип HTML Academy">
             HTML Academy
-            <a href="" class="copyright__link" aria-label="Логотип HTML Academy">
+            <span  class="copyright__link">
               <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#html-academy"/>
               </svg>
-            </a>
-          </p><!-- /.copyright -->
+            </span>
+          </a><!-- /.copyright -->
 
         </div><!-- /.footer__inner -->
       </div><!-- /.contacts -->

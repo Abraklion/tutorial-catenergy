@@ -2,6 +2,17 @@
 .menu{
   @include list;
 
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  @media (max-width:$viewport-only-mobile) {
+    text-align: center;
+  }
+
   @media (min-width:$viewport-tablet) {
     display: flex;
   }
@@ -9,8 +20,31 @@
 
 .menu__item{
 
+  @media (max-width:$viewport-only-mobile) {
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100vw;
+      height: 1px;
+      background-color: $light-gray;
+      transform: translateX(-50%);
+    }
+  }
+
 }
 
 .menu__link{
+  text-decoration: none;
+  color: $black;
 
+  @media (max-width:$viewport-only-mobile) {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 22px 0 24px;
+  }
 }

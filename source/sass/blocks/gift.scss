@@ -1,0 +1,73 @@
+
+.gift{
+  width: 280px;
+  min-height: 289px;
+
+  background-color: $basic-green-dark;
+  background-image: url(../img/icon_gift.svg),url(../img/gift-photo-mobile.jpg);
+  background-position: center 58px,center top;
+  background-repeat: no-repeat;
+  background-size: auto,cover;
+
+  @media (max-width:$viewport-only-mobile) {
+
+    @media (min-resolution:2dppx){
+      background-image: url(../img/icon_gift.svg),
+                        url(../img/gift-photo-mobile@2x.jpg);
+    }
+
+    @media (min-resolution:3dppx){
+      background-image: url(../img/icon_gift.svg),
+                        url(../img/gift-photo-mobile@3x.jpg);
+    }
+  }
+
+  @media (min-width:$viewport-tablet) {
+    width: auto;
+    min-height: 200px;
+
+    background-image: url(../img/icon_gift.svg),url(../img/gift-photo-tablet.jpg);
+
+    @media (min-resolution:2dppx){
+      background-image: url(../img/icon_gift.svg),
+                        url(../img/gift-photo-tablet@2x.jpg);
+    }
+
+    @media (min-resolution:3dppx){
+      background-image: url(../img/icon_gift.svg),
+                        url(../img/gift-photo-tablet@3x.jpg);
+    }
+  }
+
+  @media (min-width:$viewport-desktop) {
+    min-height: 289px;
+
+    background-image: url(../img/icon_gift.svg),url(../img/gift-photo-mobile.jpg);
+
+    @media (min-resolution:2dppx){
+      background-image: url(../img/icon_gift.svg),
+                        url(../img/gift-photo-mobile@2x.jpg);
+    }
+
+    @media (min-resolution:3dppx){
+      background-image: url(../img/icon_gift.svg),
+                        url(../img/gift-photo-mobile@3x.jpg);
+    }
+  }
+}
+
+.gift__text{
+
+  line-height: 20px;
+
+  color: $white;
+
+  @media (max-width:$viewport-only-mobile) {
+    max-width: 161px;
+
+    margin: 0 auto;
+    padding: 186px 0 15px 0;
+
+    text-align: center;
+  }
+}

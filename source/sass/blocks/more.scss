@@ -1,0 +1,62 @@
+
+.more{
+  position: relative;
+
+  padding: 53px 0 0 0;
+
+  $line-length: 30px;
+
+  &::before{
+    content: '';
+
+    width: $line-length;
+    height: 2px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+    background-color: $forest-wolf;
+
+    transform: translateX(-50%);
+  }
+
+  &::after{
+    content: '';
+
+    width: 2px;
+    height: $line-length;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    background-color: $forest-wolf;
+
+    transform: translateX(-50%);
+  }
+
+
+}
+
+.more__title{
+  margin: 0 0 8px 0;
+
+  @include font(400,16px,20px,'Oswald');
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $almost-black;
+}
+
+.more__text{
+  margin: 0 0 21px 0;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  text-align: center;
+  color: $dark-bluish-black;
+}
+
+.more__button{
+  width: 100%;
+}

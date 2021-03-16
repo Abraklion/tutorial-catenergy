@@ -1,6 +1,9 @@
 
 .contacts{
 
+  &--bg_grey{
+    background-color: $basic-grey;
+  }
 }
 
 .contacts__container{
@@ -13,21 +16,37 @@
 .contacts__inner{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 
-  background-color: $white;
+  padding: 28px 0 22px 0;
 
   @media (min-width:$viewport-desktop) {
     position: absolute;
     top: 95px;
     left: 20px;
+
+    background-color: $white;
   }
+
 }
 
 .contacts__title{
+  margin: 0;
+  padding: 0 15px 0 0;
 
+  @include font(400,16px,20px,'Oswald');
+
+  text-transform: uppercase;
+
+  color: $almost-black;
 }
 
 .contacts__address{
+  justify-self: end;
+
+  @include font(400,14px,20px,'Arial');
+
+  color: $dark-bluish-black;
 
   @media (min-width:$viewport-tablet) {
     justify-self: end;

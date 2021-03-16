@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="ru">
-  <head class="page">
+<html class="page" lang="ru">
+  <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
               </svg>
             </div>
 
-            <button class="header_burger js-burger">
+            <button class="header_burger js-burger" type="button">
               <span class="visually-hidden">Показать меню</span>
             </button>
 
@@ -71,7 +71,7 @@
 
             <p class="intro__subtitle">Занялся собой? Займись котом!</p>
 
-            <a class="intro__link button" href="#" type="button">подобрать программу</a>
+            <a class="intro__link button button--fz_small" href="#" type="button">подобрать программу</a>
 
           </div><!-- /.intro__inner -->
         </div><!-- /.container -->
@@ -84,7 +84,7 @@
 
             <ul class="programs__list">
 
-              <li class="programs__item">
+              <li class="programs__item programs__item--bg_cat-sits">
                 <h3 class="programs__title">похудение</h3>
                 <div class="programs__text">
                   <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -92,7 +92,7 @@
                 <a class="programs__link" href="#">каталог slim</a>
               </li><!-- /.programs__item -->
 
-              <li class="programs__item">
+              <li class="programs__item programs__item--bg_cat-walk">
                 <h3 class="programs__title">набор массы</h3>
                 <div class="programs__text">
                   <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -180,16 +180,17 @@
 
               <div class="progress__img-inner">
                 <div class="progress__img progress__img--before">
-                  <img src="img/cat-before-mobile.png" width="311" height="232" alt="Жирный кот">
+                  <img src="img/cat-before-mobile.png" width="282" height="232" alt="Жирный кот">
                 </div>
-                <div class="progress__img progress__img--after"></div>
+                <div class="progress__img progress__img--after">
+                  <img src="img/cat-after-mobile.png" width="251" height="240" alt="Жирный кот">
+                </div>
               </div>
 
               <div class="progress__bar">
                 <button class="progress__btn" type="button">Было</button>
                 <div class="progress__controls">
                   <div class="range__scale">
-                    <div class="range__bar"></div>
                   </div>
                   <div class="range__toggle" tabindex="0"></div>
                 </div>
@@ -206,7 +207,7 @@
         <div class="container contacts__container">
 
           <div class="contacts__inner">
-            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
 
@@ -224,7 +225,7 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="footer__logo logo" href="#">
+          <a class="footer__logo logo">
             <svg class="logo__icon" aria-hidden="true" width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-text"/>
             </svg>
@@ -263,14 +264,12 @@
 
           </section><!-- /.social -->
 
-          <p class="copyright">
+          <a class="copyright" href="" aria-label="Логотип HTML Academy">
             HTML Academy
-            <a href="" class="copyright__link" aria-label="Логотип HTML Academy">
-              <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#html-academy"/>
-              </svg>
-            </a>
-          </p><!-- /.copyright -->
+            <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#html-academy"/>
+            </svg>
+          </a><!-- /.copyright -->
 
         </div><!-- /.footer__inner -->
       </div><!-- /.contacts -->

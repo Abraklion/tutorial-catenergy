@@ -1,0 +1,35 @@
+
+.title{
+  margin-bottom: 40px;
+
+  @include font(400,36px,44px,'Oswald');
+
+  color: $black;
+
+  @media (max-width:$viewport-only-mobile) {
+    position: relative;
+
+    padding-top: 19px;
+
+    &::before{
+      content: '';
+
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      border-top: 1px solid $abdel-kerims-beards;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &--form{
+
+    @media (max-width:$viewport-only-mobile) {
+      padding-top: 27px;
+      margin-bottom: 37px;
+    }
+  }
+}

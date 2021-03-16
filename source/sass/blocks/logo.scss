@@ -1,6 +1,21 @@
 
 .logo{
   display: block;
+
+  text-decoration: none;
+
+  &[href]{
+    opacity: 1;
+    transition: opacity 0.2s;
+
+    &:hover{
+      opacity: .8;
+    }
+
+    &:active{
+      opacity: .6;
+    }
+  }
 }
 
 .logo__icon{
@@ -11,16 +26,5 @@
 
 .logo__img{
   display: block;
-  width: 33px;
-  height: 37px;
-
-    @media (min-width:$viewport-tablet) {
-      width: 174px;
-      height: 51px;
-    }
-
-    @media (min-width:$viewport-desktop) {
-      width: 202px;
-      height: 59px;
-    }
+  width: 100%;
 }

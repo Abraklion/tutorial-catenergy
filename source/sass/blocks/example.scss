@@ -1,6 +1,6 @@
 
 .example{
-
+  background-color: $silver;
 }
 
 .example__inner{
@@ -14,15 +14,29 @@
 }
 
 .example__description{
-
+  margin-bottom: 42px;
 }
 
 .example__title{
+  @include font(400,36px,40px,'Oswald');
 
+  margin: 27px 0 33px;
+
+  color: $black;
 }
 
 .example__text{
+  margin: 0 0 25px 0;
 
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $dark-bluish-black;
+
+  p{
+    padding-right: 12px;
+    margin: 0 0 15px 0;
+  }
 }
 
 .example__stats{
@@ -39,20 +53,57 @@
 
 .example__stats-inner{
   display: flex;
+  justify-content: center;
 }
 
 .example__stats-numbers{
+  width: 124px;
 
+  position: relative;
+
+  padding: 15px 0 17px;
+  margin: 0 31px 0 0;
+
+  border: 1px solid $gainsboro;
+  border-radius: 3px;
+
+  @include font(400,24px,24px,'Oswald');
+
+  text-align: center;
+  color: $black;
+
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 .example__stats-name {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
 
+  padding: 0 14px;
+
+  background-color: $silver;
+
+  @include font(400,12px,12px,'Arial');
+
+  color: $dark-bluish-black;
+
+  transform: translateX(-50%);
 }
 
 .example__stats-text{
+  margin: 34px 0 0 0;
 
+  @include font(400,14px,20px,'Oswald');
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
 }
 
 .example__cat{
-
+  margin: 0 0 25px 0;
 }
