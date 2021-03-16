@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html class="page" lang="ru">
   <head class="page">
 
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
               </svg>
             </div>
 
-            <button class="header_burger js-burger">
+            <button class="header_burger js-burger" type="button">
               <span class="visually-hidden">Показать меню</span>
             </button>
 
@@ -63,18 +63,18 @@
 
     <main>
 
-      <h1 class="form-title container">Подбор программы</h1>
+      <h1 class="title title--form container">Подбор программы</h1>
 
       <section class="questionnaire">
         <div class="container">
 
-          <h2 class="questionnaire__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+          <h2 class="questionnaire__title">Заполните анкету, и мы подберем<br> программу питания для вашего кота</h2>
 
           <form class="form" action="form.html" method="get">
 
             <fieldset class="form__group form__group--basis_fifty">
               <legend class="visually-hidden">Информация с котике</legend>
-              <ul class="form__item">
+              <ul class="form__item form__item--input">
                 <li class="form__list">
                   <label class="form__label" for="name">Имя:*</label>
                   <input class="form__input" id="name" type="text" name="name" placeholder="барсик" autocomplete="off">
@@ -92,39 +92,45 @@
 
             <fieldset class="form__group form__group--basis_fifty">
               <legend class="visually-hidden">Программа питания</legend>
-              <ul class="form__item">
+              <ul class="form__item form__item--radio">
                 <li class="form__list">
                   <input class="visually-hidden form__radio" id="slimming" type="radio" name="program" checked>
-                  <label class="form__label" for="slimming" >Похудение</label>
+                  <label class="form__label form__label--color_black-brown" for="slimming" >Похудение</label>
                 </li>
                 <li class="form__list">
                   <input class="visually-hidden form__radio" id="weight-gain" type="radio" name="program">
-                  <label class="form__label" for="weight-gain" >Набор массы</label>
+                  <label class="form__label form__label--color_black-brown" for="weight-gain" >Набор массы</label>
                 </li>
                 <li class="form__list">
                   <input class="visually-hidden form__radio" id="advice" type="radio" name="program">
-                  <label class="form__label" for="advice" >Не знаю (Нужен ваш совет)</label>
+                  <label class="form__label form__label--color_black-brown" for="advice" >Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset><!-- /.form__group -->
 
             <fieldset class="form__group">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <ul class="form__item form__item--input">
+              <legend class="form__legend line line--position__negative">Контактные данные (владельца&nbsp;кота)</legend>
+              <ul class="form__item form__item--input form__item--columns_two">
                 <li class="form__list">
                   <label class="form__label" for="email">E-mail:*</label>
                   <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" autocomplete="off">
+                  <svg class="form__input-icon" width="20" height="18" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#email"/>
+                  </svg>
                 </li>
                 <li class="form__list">
                   <label class="form__label" for="tel">Телефон:*</label>
                   <input class="form__input form__input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" autocomplete="off">
+                  <svg class="form__input-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#phone"/>
+                  </svg>
                 </li>
               </ul>
             </fieldset><!-- /.form__group -->
 
             <fieldset class="form__group">
-              <legend class="form__legend">Комментарий</legend>
-              <ul class="form__item">
+              <legend class="form__legend line">Комментарий</legend>
+              <ul class="form__item form__item--input">
                 <li class="form__list">
                   <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
                   <textarea class="form__input form__input--textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -133,23 +139,23 @@
             </fieldset><!-- /.form__group -->
 
             <fieldset class="form__group">
-              <legend class="form__legend">Дополнительно</legend>
+              <legend class="form__legend line">Дополнительно</legend>
               <ul class="form__item form__item--checkbox">
                 <li class="form__list">
                   <input class="visually-hidden form__checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
-                  <label class="form__label" for="sweetener" >Сахарозаменитель</label>
+                  <label class="form__label form__label--color_black" for="sweetener" >Сахарозаменитель</label>
                 </li>
                 <li class="form__list">
                   <input class="visually-hidden form__checkbox" id="drinking-water" type="checkbox" name="drinking-water">
-                  <label class="form__label" for="drinking-water" >Питьевая вода</label>
+                  <label class="form__label form__label--color_black" for="drinking-water" >Питьевая вода</label>
                 </li>
                 <li class="form__list">
                   <input class="visually-hidden form__checkbox" id="milk" type="checkbox" name="milk">
-                  <label class="form__label" for="milk" >Молоко</label>
+                  <label class="form__label form__label--color_black" for="milk" >Молоко</label>
                 </li>
                 <li class="form__list">
                   <input class="visually-hidden form__checkbox" id="vitamins" type="checkbox" name="vitamins">
-                  <label class="form__label" for="vitamins" >Витамины</label>
+                  <label class="form__label form__label--color_black" for="vitamins" >Витамины</label>
                 </li>
               </ul>
             </fieldset><!-- /.form__group -->
@@ -164,11 +170,11 @@
         </div><!-- /.container -->
       </section><!-- /.questionnaire -->
 
-      <section class="contacts">
+      <section class="contacts contacts--bg_grey">
         <div class="container contacts__container">
 
           <div class="contacts__inner">
-            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
 
@@ -186,7 +192,7 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="footer__logo logo" href="#">
+          <a class="footer__logo logo">
             <svg class="logo__icon" aria-hidden="true" width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-text"/>
             </svg>
@@ -225,14 +231,14 @@
 
           </section><!-- /.social -->
 
-          <p class="copyright">
+          <a class="copyright" href="" aria-label="Логотип HTML Academy">
             HTML Academy
-            <a href="" class="copyright__link" aria-label="Логотип HTML Academy">
+            <span  class="copyright__link">
               <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#html-academy"/>
               </svg>
-            </a>
-          </p><!-- /.copyright -->
+            </span>
+          </a><!-- /.copyright -->
 
         </div><!-- /.footer__inner -->
       </div><!-- /.contacts -->

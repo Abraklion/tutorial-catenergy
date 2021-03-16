@@ -1,0 +1,27 @@
+
+.line{
+  position: relative;
+  display: inline-block;
+
+  &::before{
+    content: '';
+
+    position: absolute;
+    top: 15px;
+    left: calc(100% + 22px);
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: $basic-green;
+  }
+
+  @media (max-width: 381px) {
+    &--position__negative{
+
+      &::before{
+        left: calc(100% - 76px);
+      }
+    }
+  }
+}

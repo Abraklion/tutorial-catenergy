@@ -10,16 +10,21 @@ $font-family-basic: 'Arial', sans-serif;
 $line-height-basic: 1.5;
 
 // Контрольные точки
+$viewport-only-mobile: 767px;
 $viewport-tablet: 768px;
 $viewport-desktop: 1280px;
 
 // Цвета
-
 $white: #FFFFFF;
 
 $basic-grey: #F2F2F2;
+$light-gray: #E6E6E6;
+$abdel-kerims-beards: #D9D9D9;
+$forest-wolf: #D3D3D3;
 $light-tele-grey: #EBEBEB;
 $gainsboro: #CDCDCD;
+$silver: #EAEAEA;
+$pearl-grey: #E7E7E7;
 $dull-gray: #666666;
 
 $black: #000000;
@@ -30,5 +35,6 @@ $dark-bluish-black: #444444;
 $basic-green-light: #5EAA2F;
 $basic-green: #68B738;
 $basic-green-dark: #63A73A;
+$basic-green-extra-dark: #64A83B;
 
 $status-error: #FF8282;

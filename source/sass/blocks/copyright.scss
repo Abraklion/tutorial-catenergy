@@ -3,11 +3,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.copyright__link{
+  line-height: 18px;
+
+  text-decoration: none;
+
+  color: $dark-bluish-black;
+
+  opacity: 1;
+  transition: opacity 0.2s;
+
+  &:hover,&:focus{
+    .copyright__icon{
+      fill: $basic-green;
+    }
+  }
+
+  &:active{
+    opacity: .3;
+  }
 }
 
 .copyright__icon{
+  fill: $dull-gray;
 
+  transition: fill 0.2s;
 }

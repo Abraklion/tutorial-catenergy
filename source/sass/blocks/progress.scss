@@ -1,0 +1,82 @@
+
+.progress{
+
+}
+
+.progress__img-inner{
+  margin: 0 0 20px 0;
+}
+
+.progress__img{
+  text-align: center;
+
+  &--before{
+    display: block;
+  }
+
+  &--after{
+    display: none;
+  }
+}
+
+.progress__bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress__btn{
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+
+  padding: 0 5px;
+
+  background-color: transparent;
+
+  @include font(400,16px,20px,'Oswald');
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $black;
+
+  border: 0;
+}
+
+.progress__controls{
+  position: relative;
+}
+
+.range__scale{
+
+  @media (max-width:$viewport-only-mobile) {
+    width: 84px;
+    height: 14px;
+
+    background-color: $white;
+
+    border: 1px solid $gainsboro;
+    border-radius: 6px;
+  }
+}
+
+.range__toggle{
+
+  @media (max-width:$viewport-only-mobile) {
+    width: 35px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: $basic-green;
+
+    border-radius: 6px;
+
+    transform: translateY(-50%);
+  }
+}

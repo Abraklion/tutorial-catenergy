@@ -1,6 +1,6 @@
 
 .instruction{
-
+  margin-bottom: 42px;
 }
 
 .instruction__inner{
@@ -8,7 +8,11 @@
 }
 
 .instruction__title{
+  margin: 0 0 38px 0;
 
+  @include font(400,36px,40px,'Oswald');
+
+  color: $black;
 }
 
 .instruction__list{
@@ -39,15 +43,31 @@
 }
 
 .instruction__box-img{
+  width: 60px;
+  height: 60px;
+  position: relative;
   background-color: $basic-green;
 }
 
 .instruction__img{
+  position: absolute;
+  max-width: 40px;
 
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
 }
 
 .instruction__text{
+  align-self: center;
 
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $dark-bluish-black;
 }
 
 
