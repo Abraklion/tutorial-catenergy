@@ -1,10 +1,33 @@
 
 .instruction{
   margin-bottom: 42px;
+
+  @media (min-width:$viewport-tablet) {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
 }
 
 .instruction__inner{
 
+  @media (min-width:$viewport-tablet) {
+    position: relative;
+
+    padding-bottom: 47px;
+
+    &::after{
+      content: '';
+
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+
+      border-bottom: 1px solid $light-gray;
+
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .instruction__title{
@@ -13,6 +36,13 @@
   @include font(400,36px,40px,'Oswald');
 
   color: $black;
+
+  @media (min-width:$viewport-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-bottom: 72px;
+  }
 }
 
 .instruction__list{
@@ -23,6 +53,8 @@
   @media (min-width:$viewport-tablet) {
     grid-template-columns: repeat(2,249px);
     grid-gap: 37px 137px;
+
+    counter-reset: list;
   }
 
   @media (min-width:$viewport-desktop) {
@@ -38,7 +70,24 @@
 
   @media (min-width:$viewport-tablet) {
     grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(129px,auto);
     grid-row-gap: 31px;
+
+    position: relative;
+
+    &::before{
+      counter-increment: list;
+      content: counter(list);
+
+      position: absolute;
+      top: -38px;
+      right: 0;
+      z-index: -1;
+
+      @include font(400,280px,280px,'Oswald');
+
+      color: $basic-grey;
+    }
   }
 }
 
@@ -47,6 +96,12 @@
   height: 60px;
   position: relative;
   background-color: $basic-green;
+
+
+  @media (min-width:$viewport-tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .instruction__img{
@@ -68,6 +123,14 @@
   line-height: 18px;
 
   color: $dark-bluish-black;
+
+
+  @media (min-width:$viewport-tablet) {
+    align-self: start;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 

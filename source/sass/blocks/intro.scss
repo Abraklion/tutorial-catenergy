@@ -58,6 +58,10 @@
   }
 
   @media (min-width:$viewport-tablet) {
+    min-height: 874px;
+
+    background-position: bottom 0 center;
+
     background-image: url(../img/index-can-tablet.png);
     background-size: 709px auto;
 
@@ -84,6 +88,12 @@
 
 .intro__inner{
 
+  @media (min-width:$viewport-tablet) {
+    max-width: 420px;
+
+    margin: 0 0 0 87px;
+    padding: 62px 0 0 0;
+  }
 }
 
 .intro__title{
@@ -97,6 +107,15 @@
   @media (max-width:$viewport-only-mobile) {
     text-align: center;
     color: $white;
+  }
+
+  @media (min-width:$viewport-tablet) {
+    margin: 0 0 41px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    color: $black;
   }
 }
 
@@ -119,9 +138,20 @@
     margin: 0 0 340px 0;
   }
 
+  @media (min-width:$viewport-tablet) {
+    margin: 0 0 49px 0;
 
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $black;
+  }
 }
 
 .intro__link{
   width: 100%;
+
+  @media (min-width:$viewport-tablet) {
+    width: 244px;
+  }
 }

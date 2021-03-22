@@ -20,6 +20,14 @@
 
   padding: 28px 0 22px 0;
 
+  @media (min-width:$viewport-tablet) {
+    grid-template-columns: 170px 160px;
+    align-items: start;
+    justify-content: space-between;
+
+    padding: 66px 42px 58px 41px;
+  }
+
   @media (min-width:$viewport-desktop) {
     position: absolute;
     top: 95px;
@@ -39,16 +47,34 @@
   text-transform: uppercase;
 
   color: $almost-black;
+
+  @media (min-width:$viewport-tablet) {
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-right: 0;
+  }
 }
 
 .contacts__address{
   justify-self: end;
 
+  font-style: normal;
   @include font(400,14px,20px,'Arial');
 
   color: $dark-bluish-black;
 
   @media (min-width:$viewport-tablet) {
-    justify-self: end;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: right;
+
+    span{
+      display: inline-block;
+      vertical-align: middle;
+
+      margin-top: 20px;
+    }
   }
 }

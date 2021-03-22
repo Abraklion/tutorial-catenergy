@@ -28,4 +28,8 @@
   fill: $dull-gray;
 
   transition: fill 0.2s;
+
+  @media (min-width:$viewport-tablet) {
+    margin-left: 22px;
+  }
 }

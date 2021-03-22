@@ -15,6 +15,11 @@
 
   @media (min-width:$viewport-tablet) {
     display: flex;
+    flex-wrap: wrap;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -35,16 +40,59 @@
     }
   }
 
+  @media (min-width:$viewport-tablet) {
+    margin:0 36px 0 0;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
 }
 
 .menu__link{
+  display: inline-block;
+  vertical-align: middle;
+
+  padding: 22px 0 24px;
+
   text-decoration: none;
   color: $black;
 
-  @media (max-width:$viewport-only-mobile) {
-    display: inline-block;
-    vertical-align: middle;
+  @media (min-width:$viewport-tablet) {
+    opacity: 1;
 
-    padding: 22px 0 24px;
+    transition: opacity 0.2s;
+
+    padding: 14px 0 10px 0;
+
+    &:hover{
+      opacity: .6;
+    }
+
+    &:active{
+      opacity: .3;
+    }
+  }
+
+  &--active{
+    position: relative;
+    pointer-events: none;
+    cursor: default;
+
+    @media (min-width:$viewport-tablet) {
+
+      &::before{
+        content: '';
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+
+        background-color: $basic-green;
+      }
+    }
   }
 }

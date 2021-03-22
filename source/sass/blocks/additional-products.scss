@@ -6,6 +6,10 @@
 .additional__inner{
   padding: 28px 0 35px 0;
 
+  @media (min-width:$viewport-tablet) {
+    padding: 68px 0 76px 0;
+  }
+
   @media (min-width:$viewport-desktop) {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +24,14 @@
 
   color: $black;
 
+  @media (min-width:$viewport-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin-bottom: 80px;
+    margin-left: 40px;
+  }
+
   @media (min-width:$viewport-desktop) {
     flex-basis: 100%;
   }
@@ -29,7 +41,16 @@
 .additional-products__list{
   @include list;
 
-  margin-bottom: 39px;
+  @media (max-width:$viewport-only-mobile) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width:$viewport-tablet) and (max-width:1279px){
+    margin-bottom: 70px;
+
+    border-left: 1px solid $gainsboro;
+    border-right: 1px solid $gainsboro;
+  }
 
   @media (min-width:$viewport-desktop) {
     flex-basis: 896px;
@@ -49,6 +70,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    padding: 26px 38px 28px;
   }
 
   @media (min-width:$viewport-desktop) {
@@ -63,6 +86,15 @@
 
   text-transform: uppercase;
   color: $black-brown;
+
+  @media (min-width:$viewport-tablet) {
+    align-self: center;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-bottom: 0;
+  }
 
   @media (min-width:$viewport-desktop) {
     flex-basis: 27.34%;
@@ -82,6 +114,15 @@
 
   color: $dark-bluish-black;
 
+  @media (min-width:$viewport-tablet) {
+    align-self: center;
+
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   @media (min-width:$viewport-desktop) {
     flex-basis: 31.81%;
     margin-right: 40px;
@@ -90,6 +131,11 @@
 
 .additional-products__quantity{
   margin: 0;
+
+
+  @media (min-width:$viewport-tablet) {
+    margin-right: 50px;
+  }
 }
 
 .additional-products__price{
@@ -101,6 +147,8 @@
 
   @media (min-width:$viewport-tablet) {
     flex-basis: 100%;
+
+    margin-top: 28px;
   }
 
   @media (min-width:$viewport-desktop) {

@@ -4,7 +4,7 @@
   min-height: 289px;
 
   background-color: $basic-green-dark;
-  background-image: url(../img/icon_gift.svg),url(../img/gift-photo-mobile.jpg);
+  background-image: url(../img/gift.svg),url(../img/gift-photo-mobile.jpg);
   background-position: center 58px,center top;
   background-repeat: no-repeat;
   background-size: auto,cover;
@@ -12,12 +12,12 @@
   @media (max-width:$viewport-only-mobile) {
 
     @media (min-resolution:2dppx){
-      background-image: url(../img/icon_gift.svg),
+      background-image: url(../img/gift.svg),
                         url(../img/gift-photo-mobile@2x.jpg);
     }
 
     @media (min-resolution:3dppx){
-      background-image: url(../img/icon_gift.svg),
+      background-image: url(../img/gift.svg),
                         url(../img/gift-photo-mobile@3x.jpg);
     }
   }
@@ -26,31 +26,37 @@
     width: auto;
     min-height: 200px;
 
-    background-image: url(../img/icon_gift.svg),url(../img/gift-photo-tablet.jpg);
+    background-image: url(../img/gift.svg),url(../img/gift-photo-tablet.jpg);
 
     @media (min-resolution:2dppx){
-      background-image: url(../img/icon_gift.svg),
+      background-image: url(../img/gift.svg),
                         url(../img/gift-photo-tablet@2x.jpg);
     }
 
     @media (min-resolution:3dppx){
-      background-image: url(../img/icon_gift.svg),
+      background-image: url(../img/gift.svg),
                         url(../img/gift-photo-tablet@3x.jpg);
     }
+  }
+
+  @media (min-width:$viewport-tablet) and (max-width:1279px){
+    display: flex;
+
+    background-position: left 78px center,center top;
   }
 
   @media (min-width:$viewport-desktop) {
     min-height: 289px;
 
-    background-image: url(../img/icon_gift.svg),url(../img/gift-photo-mobile.jpg);
+    background-image: url(../img/gift.svg),url(../img/gift-photo-mobile.jpg);
 
     @media (min-resolution:2dppx){
-      background-image: url(../img/icon_gift.svg),
+      background-image: url(../img/gift.svg),
                         url(../img/gift-photo-mobile@2x.jpg);
     }
 
     @media (min-resolution:3dppx){
-      background-image: url(../img/icon_gift.svg),
+      background-image: url(../img/gift.svg),
                         url(../img/gift-photo-mobile@3x.jpg);
     }
   }
@@ -69,5 +75,11 @@
     padding: 186px 0 15px 0;
 
     text-align: center;
+  }
+
+  @media (min-width:$viewport-tablet) and (max-width:1279px){
+    max-width: 161px;
+
+    margin: 71px 124px 65px auto;
   }
 }

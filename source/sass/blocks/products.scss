@@ -59,6 +59,11 @@
     }
   }
 
+  @media (min-width:$viewport-tablet) {
 
+    &:last-child{
+      align-self: end;
+    }
+  }
 
 }
