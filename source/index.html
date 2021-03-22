@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <title>Кэт энерджи</title>
 
@@ -31,7 +31,7 @@
 
             <div class="header__logo-center logo">
               <svg class="logo__icon" aria-hidden="true" width="101" height="18">
-                <use xlink:href="img/sprite.svg#logo-text"/>
+                <use xlink:href="img/sprite.svg#icon_logo-text"/>
               </svg>
             </div>
 
@@ -45,7 +45,7 @@
 
             <ul class="menu">
               <li class="menu__item">
-                <a href="" class="menu__link">главная</a>
+                <a href="" class="menu__link menu__link--active">главная</a>
               </li>
               <li class="menu__item">
                 <a href="" class="menu__link">каталог продукции</a>
@@ -95,7 +95,7 @@
               <li class="programs__item programs__item--bg_cat-walk">
                 <h3 class="programs__title">набор массы</h3>
                 <div class="programs__text">
-                  <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                  <p>Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 </div>
                 <a class="programs__link" href="#">каталог pro</a>
               </li><!-- /.programs__item -->
@@ -171,7 +171,7 @@
                     <small class="example__stats-name">затрачено времени</small>
                   </p>
                 </div>
-                <p class="example__stats-text">Затраты на питание: 15 000 РУБ.</p>
+                <p class="example__stats-text">Затраты на питание:<br> 15 000 РУБ.</p>
               </div>
 
             </div><!-- /.example__description -->
@@ -188,13 +188,17 @@
               </div>
 
               <div class="progress__bar">
-                <button class="progress__btn" type="button">Было</button>
+                <button class="progress__btn" type="button">
+                  <span>Было</span>
+                </button>
                 <div class="progress__controls">
                   <div class="range__scale">
                   </div>
                   <div class="range__toggle" tabindex="0"></div>
                 </div>
-                <button class="progress__btn" type="button">Стало</button>
+                <button class="progress__btn" type="button">
+                  <span>Стало</span>
+                </button>
               </div>
 
             </div><!-- /.progress -->
@@ -208,7 +212,7 @@
 
           <div class="contacts__inner">
             <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
           </div>
 
         </div><!-- /.contacts -->
@@ -227,7 +231,7 @@
 
           <a class="footer__logo logo">
             <svg class="logo__icon" aria-hidden="true" width="128" height="24">
-              <use xlink:href="img/sprite.svg#logo-text"/>
+              <use xlink:href="img/sprite.svg#icon_logo-text"/>
             </svg>
           </a><!-- /.logo -->
 
@@ -237,25 +241,25 @@
             <ul class="social__list">
 
               <li class="social__item">
-                <a href="" class="social__link" aria-label="VK">
-                  <svg class="social__icon" width="23" height="13" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#vk"/>
+                <a href="" class="social__link" aria-label="Vk">
+                  <svg class="social__icon social__icon--vk" width="23" height="13" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon_vk"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Instagram">
-                  <svg class="social__icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#instagram"/>
+                  <svg class="social__icon social__icon--instagram" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon_instagram"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Facebook">
-                  <svg class="social__icon" width="22" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#fb"/>
+                  <svg class="social__icon social__icon--facebook" width="22" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon_facebook"/>
                   </svg>
                 </a>
               </li>
@@ -267,7 +271,7 @@
           <a class="copyright" href="" aria-label="Логотип HTML Academy">
             HTML Academy
             <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#html-academy"/>
+              <use xlink:href="img/sprite.svg#icon_html"/>
             </svg>
           </a><!-- /.copyright -->
 

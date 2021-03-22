@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <title>Каталог продукции</title>
 
@@ -16,50 +16,50 @@
   <body class="page__body">
 
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
+    <div class="container">
+      <div class="header__inner">
 
-          <div class="header__top">
+        <div class="header__top">
 
-            <a class="logo">
-              <picture>
-                <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" type="image/svg+xml">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" type="image/svg+xml">
-                <img class="logo__img" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
-              </picture>
-            </a><!-- /.logo -->
+          <a class="logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" type="image/svg+xml">
+              <img class="logo__img" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+            </picture>
+          </a><!-- /.logo -->
 
-            <div class="header__logo-center logo">
-              <svg class="logo__icon" aria-hidden="true" width="101" height="18">
-                <use xlink:href="img/sprite.svg#logo-text"/>
-              </svg>
-            </div>
+          <div class="header__logo-center logo">
+            <svg class="logo__icon" aria-hidden="true" width="101" height="18">
+              <use xlink:href="img/sprite.svg#icon_logo-text"/>
+            </svg>
+          </div>
 
-            <button class="header_burger js-burger" type="button">
-              <span class="visually-hidden">Показать меню</span>
-            </button>
+          <button class="header_burger js-burger" type="button">
+            <span class="visually-hidden">Показать меню</span>
+          </button>
 
-          </div><!-- /.header__top -->
+        </div><!-- /.header__top -->
 
-          <nav class="header__nav">
+        <nav class="header__nav">
 
-            <ul class="menu">
-              <li class="menu__item">
-                <a href="" class="menu__link">главная</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link">каталог продукции</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link">подбор программы</a>
-              </li>
-            </ul><!-- /.menu -->
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="" class="menu__link menu__link--active">главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">каталог продукции</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">подбор программы</a>
+            </li>
+          </ul><!-- /.menu -->
 
-          </nav><!-- /.header__nav -->
+        </nav><!-- /.header__nav -->
 
-        </div><!-- /.header__inner -->
-      </div><!-- /.container -->
-    </header><!-- /.header -->
+      </div><!-- /.header__inner -->
+    </div><!-- /.container -->
+  </header><!-- /.header -->
 
     <main>
 
@@ -98,16 +98,18 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
+                              srcset="img/desktop-cat-energy-chicken-500g.webp,
+                                      img/desktop-cat-energy-chicken-500g@2x.webp 2x,
+                                      img/desktop-cat-energy-chicken-500g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
                               srcset="img/desktop-cat-energy-chicken-500g.png,
                                       img/desktop-cat-energy-chicken-500g@2x.png 2x,
                                       img/desktop-cat-energy-chicken-500g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-chicken-500g.png"
-                           srcset="img/cat-energy-chicken-500g@2x.png 2x,
-                                   img/cat-energy-chicken-500g@3x.png 3x"
-                           alt="">
+
+                      <img class="cart__img" src="img/cat-energy-chicken-500g.png" srcset=" img/cat-energy-chicken-500g.webp 1x, img/cat-energy-chicken-500g@2x.webp 2x, img/cat-energy-chicken-500g@3x.webp 3x, img/cat-energy-chicken-500g@2x.png 2x, img/cat-energy-chicken-500g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -141,21 +143,28 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 1280px)" 
+                      <source media="(min-width: 1280px)"
+                              srcset="img/desktop-cat-energy-chicken-1000g.webp,
+                                      img/desktop-cat-energy-chicken-1000g@2x.webp 2x,
+                                      img/desktop-cat-energy-chicken-1000g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/tablet-cat-energy-chicken-1000g.webp,
+                                      img/tablet-cat-energy-chicken-1000g@2x.webp 2x,
+                                      img/tablet-cat-energy-chicken-1000g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 1280px)"
                               srcset="img/desktop-cat-energy-chicken-1000g.png,
                                       img/desktop-cat-energy-chicken-1000g@2x.png 2x,
                                       img/desktop-cat-energy-chicken-1000g@3x.png 3x"
                               type="image/jpeg">
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
                               srcset="img/tablet-cat-energy-chicken-1000g.png,
                                       img/tablet-cat-energy-chicken-1000g@2x.png 2x,
                                       img/tablet-cat-energy-chicken-1000g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-chicken-1000g.png"
-                           srcset="img/cat-energy-chicken-1000g@2x.png 2x,
-                                   img/cat-energy-chicken-1000g@3x.png 3x"
-                           alt="">
+
+                      <img class="cart__img" src="img/cat-energy-chicken-1000g.png" srcset="img/cat-energy-chicken-1000g.webp 1x, img/cat-energy-chicken-1000g@2x.webp 2x, img/cat-energy-chicken-1000g@3x.webp 3x, img/cat-energy-chicken-1000g@2x.png 2x, img/cat-energy-chicken-1000g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -189,16 +198,18 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
+                              srcset="img/desktop-cat-energy-fish-500g.webp,
+                                      img/desktop-cat-energy-fish-500g@2x.webp 2x,
+                                      img/desktop-cat-energy-fish-500g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
                               srcset="img/desktop-cat-energy-fish-500g.png,
                                       img/desktop-cat-energy-fish-500g@2x.png 2x,
                                       img/desktop-cat-energy-fish-500g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-fish-500g.png"
-                           srcset="img/cat-energy-fish-500g@2x.png 2x,
-                                   img/cat-energy-fish-500g@3x.png 3x"
-                           alt="">
+
+                      <img class="cart__img" src="img/cat-energy-fish-500g.png" srcset="img/cat-energy-fish-500g.webp 1x, img/cat-energy-fish-500g@2x.webp 2x, img/cat-energy-fish-500g@3x.webp 3x ,img/cat-energy-fish-500g@2x.png 2x, img/cat-energy-fish-500g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -232,21 +243,28 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 1280px)" 
+                      <source media="(min-width: 1280px)"
+                              srcset="img/desktop-cat-energy-fish-1000g.webp,
+                                      img/desktop-cat-energy-fish-1000g@2x.webp 2x,
+                                      img/desktop-cat-energy-fish-1000g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/tablet-cat-energy-fish-1000g.webp,
+                                      img/tablet-cat-energy-fish-1000g@2x.webp 2x,
+                                      img/tablet-cat-energy-fish-1000g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 1280px)"
                               srcset="img/desktop-cat-energy-fish-1000g.png,
                                       img/desktop-cat-energy-fish-1000g@2x.png 2x,
                                       img/desktop-cat-energy-fish-1000g@3x.png 3x"
                               type="image/jpeg">
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
                               srcset="img/tablet-cat-energy-fish-1000g.png,
                                       img/tablet-cat-energy-fish-1000g@2x.png 2x,
                                       img/tablet-cat-energy-fish-1000g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-fish-1000g.png"
-                           srcset="img/cat-energy-fish-1000g@2x.png 2x,
-                                   img/cat-energy-fish-1000g@3x.png 3x"
-                           alt="">
+
+                      <img class="cart__img" src="img/cat-energy-fish-1000g.png" srcset="img/cat-energy-fish-1000g.webp 1x, img/cat-energy-fish-1000g@2x.webp 2x, img/cat-energy-fish-1000g@3x.webp 3x, img/cat-energy-fish-1000g@2x.png 2x, img/cat-energy-fish-1000g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -280,16 +298,18 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
+                              srcset="img/desktop-cat-energy-buckwheat-500g.webp,
+                                      img/desktop-cat-energy-buckwheat-500g@2x.webp 2x,
+                                      img/desktop-cat-energy-buckwheat-500g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
                               srcset="img/desktop-cat-energy-buckwheat-500g.png,
                                       img/desktop-cat-energy-buckwheat-500g@2x.png 2x,
                                       img/desktop-cat-energy-buckwheat-500g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-buckwheat-500g.png"
-                           srcset="img/cat-energy-buckwheat-500g@2x.png 2x,
-                                   img/cat-energy-buckwheat-500g@3x.png 3x"
-                           alt="">
+
+                      <img class="cart__img" src="img/cat-energy-buckwheat-500g.png" srcset="img/cat-energy-buckwheat-500g.webp 1x, img/cat-energy-buckwheat-500g@2x.webp 2x, img/cat-energy-buckwheat-500g@3x.webp 3x, img/cat-energy-buckwheat-500g@2x.png 2x, img/cat-energy-buckwheat-500g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -323,21 +343,28 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 1280px)" 
+                      <source media="(min-width: 1280px)"
+                              srcset="img/desktop-cat-energy-buckwheat-1000g.webp,
+                              img/desktop-cat-energy-buckwheat-1000g@2x.webp 2x,
+                              img/desktop-cat-energy-buckwheat-1000g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
+                              srcset="img/tablet-cat-energy-buckwheat-1000g.webp,
+                                      img/tablet-cat-energy-buckwheat-1000g@2x.webp 2x,
+                                      img/tablet-cat-energy-buckwheat-1000g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 1280px)"
                       srcset="img/desktop-cat-energy-buckwheat-1000g.png,
                               img/desktop-cat-energy-buckwheat-1000g@2x.png 2x,
                               img/desktop-cat-energy-buckwheat-1000g@3x.png 3x"
                       type="image/jpeg">
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
                               srcset="img/tablet-cat-energy-buckwheat-1000g.png,
                                       img/tablet-cat-energy-buckwheat-1000g@2x.png 2x,
                                       img/tablet-cat-energy-buckwheat-1000g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-buckwheat-1000g.png"
-                           srcset="img/cat-energy-buckwheat-1000g@2x.png 2x,
-                                   img/cat-energy-buckwheat-1000g@3x.png 3x"
-                           alt="">
+
+                      <img class="cart__img" src="img/cat-energy-buckwheat-1000g.png" srcset="img/cat-energy-buckwheat-1000g.webp 1x, img/cat-energy-buckwheat-1000g@2x.webp 2x, img/cat-energy-buckwheat-1000g@3x.webp 3x, img/cat-energy-buckwheat-1000g@2x.png 2x, img/cat-energy-buckwheat-1000g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -371,16 +398,17 @@
 
                   <footer class="cart__footer">
                     <picture>
-                      <source media="(min-width: 768px)" 
+                      <source media="(min-width: 768px)"
+                              srcset="img/desktop-cat-energy-rice-500g.webp,
+                                      img/desktop-cat-energy-rice-500g@2x.webp 2x,
+                                      img/desktop-cat-energy-rice-500g@3x.webp 3x"
+                              type="image/webp">
+                      <source media="(min-width: 768px)"
                               srcset="img/desktop-cat-energy-rice-500g.png,
                                       img/desktop-cat-energy-rice-500g@2x.png 2x,
                                       img/desktop-cat-energy-rice-500g@3x.png 3x"
                               type="image/jpeg">
-                      <img class="cart__img"
-                           src="img/cat-energy-rice-500g.png"
-                           srcset="img/cat-energy-rice-500g@2x.png 2x,
-                                   img/cat-energy-rice-500g@3x.png 3x"
-                           alt="">
+                      <img class="cart__img" src="img/cat-energy-rice-500g.png" srcset="img/cat-energy-rice-500g.webp 1x, img/cat-energy-rice-500g@2x.webp 2x, img/cat-energy-rice-500g@3x.webp 3x, img/cat-energy-rice-500g@2x.png 2x, img/cat-energy-rice-500g@3x.png 3x" alt="">
                     </picture>
                   </footer>
 
@@ -450,7 +478,7 @@
             </ul><!-- /.additional-products__list -->
 
             <div class="additional-products__gift gift">
-              <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+              <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
             </div><!-- /.gift -->
 
           </div><!-- /.additional__inner -->
@@ -460,9 +488,9 @@
       <section class="contacts contacts--bg_grey">
         <div class="container contacts__container">
 
-          <div class="contacts__inner contacts__inner">
+          <div class="contacts__inner">
             <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
           </div>
 
         </div><!-- /.contacts -->
@@ -479,9 +507,9 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="footer__logo logo">
+          <a class="footer__logo logo" href="index.html">
             <svg class="logo__icon" aria-hidden="true" width="128" height="24">
-              <use xlink:href="img/sprite.svg#logo-text"/>
+              <use xlink:href="img/sprite.svg#icon_logo-text"/>
             </svg>
           </a><!-- /.logo -->
 
@@ -491,25 +519,25 @@
             <ul class="social__list">
 
               <li class="social__item">
-                <a href="" class="social__link" aria-label="VK">
-                  <svg class="social__icon" width="23" height="13" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#vk"/>
+                <a href="" class="social__link" aria-label="Vk">
+                  <svg class="social__icon social__icon--vk" width="23" height="13" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon_vk"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Instagram">
-                  <svg class="social__icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#instagram"/>
+                  <svg class="social__icon social__icon--instagram" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon_instagram"/>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
                 <a href="" class="social__link" aria-label="Facebook">
-                  <svg class="social__icon" width="22" height="20" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#fb"/>
+                  <svg class="social__icon social__icon--facebook" width="22" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon_facebook"/>
                   </svg>
                 </a>
               </li>
@@ -520,11 +548,9 @@
 
           <a class="copyright" href="" aria-label="Логотип HTML Academy">
             HTML Academy
-            <span  class="copyright__link">
-              <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#html-academy"/>
-              </svg>
-            </span>
+            <svg class="copyright__icon" width="27" height="34" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon_html"/>
+            </svg>
           </a><!-- /.copyright -->
 
         </div><!-- /.footer__inner -->

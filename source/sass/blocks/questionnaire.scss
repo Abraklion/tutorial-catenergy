@@ -1,14 +1,26 @@
 
-.questionnaire{
+.questionnaire {
   overflow-x: hidden;
   padding-bottom: 32px;
+
+  @media (min-width: $viewport-tablet) {
+    padding-bottom: 72px;
+  }
 }
 
-.questionnaire__title{
+.questionnaire__title {
   margin: 0 0 39px 0;
 
-  @include font(400,14px,18px,'Oswald');
+  @include font(400,14px,18px,"Oswald");
 
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 66px;
+    padding: 0 37px 0 40px;
+  }
 }

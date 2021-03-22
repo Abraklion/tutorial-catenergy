@@ -1,5 +1,5 @@
 
-.button{
+.button {
   user-select: none;
 
   display: inline-block;
@@ -11,7 +11,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 
   text-transform: uppercase;
   text-decoration: none;
@@ -22,15 +22,49 @@
 
   border: none;
 
+  opacity: 1;
   cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
 
-  &--fz_small{
-    font-size: 14px;
+  &:hover {
+    background-color: $basic-green-light;
   }
 
-  &--bg_grey{
+  &:active {
+    background-color: $basic-green-light;
+
+    color: rgba($white, 0.3);
+  }
+
+  @media (min-width: $viewport-tablet) {
+    padding: 9.5px 26px;
+
+    line-height: 20px;
+  }
+
+  &--fz_small {
+    font-size: 14px;
+
+    @media (min-width: $viewport-tablet) {
+      padding: 17px 26px;
+
+      font-size: 20px;
+    }
+  }
+
+  &--bg_grey {
     background-color: $basic-grey;
 
     color: $dark-bluish-black;
+
+    &:hover {
+      background-color: $light-tele-grey;
+    }
+
+    &:active {
+      background-color: $light-tele-grey;
+
+      color: rgba($dark-bluish-black, 0.3);
+    }
   }
 }

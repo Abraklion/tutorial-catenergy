@@ -1,18 +1,18 @@
 
-.title{
+.title {
   margin-bottom: 40px;
 
-  @include font(400,36px,44px,'Oswald');
+  @include font(400,36px,44px,"Oswald");
 
   color: $black;
 
-  @media (max-width:$viewport-only-mobile) {
+  @media (max-width: $viewport-only-mobile) {
     position: relative;
 
     padding-top: 19px;
 
-    &::before{
-      content: '';
+    &::before {
+      content: "";
 
       width: 100vw;
       position: absolute;
@@ -25,11 +25,22 @@
     }
   }
 
-  &--form{
+  @media (min-width: $viewport-tablet) {
+    margin-top: 65px;
+    margin-bottom: 83px;
 
-    @media (max-width:$viewport-only-mobile) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &--form {
+    @media (max-width: $viewport-only-mobile) {
       padding-top: 27px;
       margin-bottom: 37px;
+    }
+
+    @media (min-width: $viewport-tablet) {
+      margin-bottom: 54px;
     }
   }
 }

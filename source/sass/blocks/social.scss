@@ -1,14 +1,12 @@
 
-.social{
-
-  @media (max-width:$viewport-only-mobile) {
+.social {
+  @media (max-width: $viewport-only-mobile) {
     border-top: 1px solid $abdel-kerims-beards;
     border-bottom: 1px solid $abdel-kerims-beards;
   }
-
 }
 
-.social__list{
+.social__list {
   @include list;
 
   display: flex;
@@ -18,36 +16,58 @@
   line-height: 0;
 }
 
-.social__item{
+.social__item {
   margin: 0 35px 0 0;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
+
+  @media (min-width: $viewport-tablet) {
+    margin-right: 28px;
+  }
 }
 
-.social__link{
+.social__link {
   text-decoration: none;
 
-  &:hover,&:focus{
-    .social__icon{
+  &:hover,
+  &:focus {
+    .social__icon {
       fill: $basic-green;
     }
   }
 
-  &:active{
-    .social__icon{
+  &:active {
+    .social__icon {
       fill: $basic-green;
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }
 
-.social__icon{
+.social__icon {
   display: block;
 
   fill: $dull-gray;
 
   opacity: 1;
-  transition: fill 0.2s,opacity 0.2s;
+  transition: fill 0.2s, opacity 0.2s;
+
+  @media (min-width: $viewport-tablet) {
+    &--vk {
+      width: 28px;
+      height: 17px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 15px;
+      height: 32px;
+    }
+  }
 }

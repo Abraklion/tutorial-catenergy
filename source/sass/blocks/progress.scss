@@ -1,32 +1,40 @@
 
-.progress{
+.progress {
 
 }
 
-.progress__img-inner{
+.progress__img-inner {
   margin: 0 0 20px 0;
+
+  @media (min-width: $viewport-tablet) {
+    min-height: 540px;
+
+    margin-bottom: 0;
+  }
 }
 
-.progress__img{
+.progress__img {
   text-align: center;
 
-  &--before{
+  &--before {
     display: block;
   }
 
-  &--after{
+  &--after {
     display: none;
   }
 }
 
-.progress__bar{
+.progress__bar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.progress__btn{
+.progress__btn {
   display: inline-block;
+  vertical-align: middle;
+
   width: 70px;
   height: 40px;
 
@@ -34,7 +42,7 @@
 
   background-color: transparent;
 
-  @include font(400,16px,20px,'Oswald');
+  @include font(400,16px,20px,"Oswald");
 
   text-align: center;
   text-transform: uppercase;
@@ -42,15 +50,42 @@
   color: $black;
 
   border: 0;
+
+  cursor: pointer;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover span {
+      border-bottom-style: solid;
+      border-bottom-color: rgba(#000000, 0.4);
+    }
+
+    &:active span {
+      border-bottom-style: none;
+    }
+  }
+
+  span {
+    @media (min-width: $viewport-tablet) {
+      border-bottom: 1px dotted rgba(#000000, 0.24);
+
+      transition: border 0.2s;
+    }
+  }
 }
 
-.progress__controls{
+.progress__controls {
   position: relative;
+
+  @media (min-width: $viewport-tablet) {
+    margin: 0 14px;
+  }
 }
 
-.range__scale{
-
-  @media (max-width:$viewport-only-mobile) {
+.range__scale {
+  @media (max-width: $viewport-only-mobile) {
     width: 84px;
     height: 14px;
 
@@ -59,14 +94,24 @@
     border: 1px solid $gainsboro;
     border-radius: 6px;
   }
+
+  @media (min-width: $viewport-tablet) {
+    width: 428px;
+    height: 6px;
+
+    background-color: $very-pale-blue;
+
+    border-radius: 6px;
+  }
 }
 
-.range__toggle{
+.range__toggle {
+  position: absolute;
+  cursor: pointer;
 
-  @media (max-width:$viewport-only-mobile) {
+  @media (max-width: $viewport-only-mobile) {
     width: 35px;
     height: 6px;
-    position: absolute;
     left: 0;
     top: 50%;
 
@@ -78,5 +123,48 @@
     border-radius: 6px;
 
     transform: translateY(-50%);
+  }
+
+  @media (min-width: $viewport-tablet) {
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    top: 50%;
+
+    background-color: $white;
+
+    border: 1px solid $gainsboro;
+    border-radius: 50%;
+
+    filter: drop-shadow(0 1px 3px rgba($black, 0.16));
+    transform: translate(-50%, -50%);
+    transition: filter 0.2s, border-color 0.2s;
+
+    &::before {
+      content: "";
+
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      background-color: $basic-green;
+
+      border-radius: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba($black, 0.19));
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      filter: drop-shadow(0 3px 5px rgba($black, 0.2));
+      border-color: $basic-green;
+    }
   }
 }
