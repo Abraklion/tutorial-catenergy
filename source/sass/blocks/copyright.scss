@@ -1,5 +1,5 @@
 
-.copyright{
+.copyright {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,23 +13,24 @@
   opacity: 1;
   transition: opacity 0.2s;
 
-  &:hover,&:focus{
-    .copyright__icon{
+  &:hover,
+  &:focus {
+    .copyright__icon {
       fill: $basic-green;
     }
   }
 
-  &:active{
-    opacity: .3;
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.copyright__icon{
+.copyright__icon {
   fill: $dull-gray;
 
   transition: fill 0.2s;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     margin-left: 22px;
   }
 }

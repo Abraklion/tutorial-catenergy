@@ -1,22 +1,25 @@
 
-.instruction{
+.instruction {
   margin-bottom: 42px;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     overflow: hidden;
     margin-bottom: 0;
   }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 11px;
+  }
 }
 
-.instruction__inner{
-
-  @media (min-width:$viewport-tablet) {
+.instruction__inner {
+  @media (min-width: $viewport-tablet) {
     position: relative;
 
     padding-bottom: 47px;
 
-    &::after{
-      content: '';
+    &::after {
+      content: "";
 
       position: absolute;
       left: 50%;
@@ -28,16 +31,24 @@
       transform: translateX(-50%);
     }
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-bottom: 0;
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
-.instruction__title{
+.instruction__title {
   margin: 0 0 38px 0;
 
-  @include font(400,36px,40px,'Oswald');
+  @include font(400,36px,40px,"Oswald");
 
   color: $black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 60px;
     line-height: 60px;
 
@@ -45,37 +56,37 @@
   }
 }
 
-.instruction__list{
+.instruction__list {
   @include list;
   display: grid;
   grid-gap: 20px;
 
-  @media (min-width:$viewport-tablet) {
-    grid-template-columns: repeat(2,249px);
+  @media (min-width: $viewport-tablet) {
+    grid-template-columns: repeat(2, 249px);
     grid-gap: 37px 137px;
 
     counter-reset: list;
   }
 
-  @media (min-width:$viewport-desktop) {
-    grid-template-columns: repeat(4,1fr);
+  @media (min-width: $viewport-desktop) {
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 79px;
   }
 }
 
-.instruction__item{
+.instruction__item {
   display: grid;
   grid-template-columns: 60px 1fr;
   grid-column-gap: 20px;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(129px,auto);
+    grid-template-rows: auto minmax(129px, auto);
     grid-row-gap: 31px;
 
     position: relative;
 
-    &::before{
+    &::before {
       counter-increment: list;
       content: counter(list);
 
@@ -84,37 +95,37 @@
       right: 0;
       z-index: -1;
 
-      @include font(400,280px,280px,'Oswald');
+      @include font(400,280px,280px,"Oswald");
 
       color: $basic-grey;
     }
   }
 }
 
-.instruction__box-img{
+.instruction__box-img {
   width: 60px;
   height: 60px;
   position: relative;
   background-color: $basic-green;
 
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     width: 80px;
     height: 80px;
   }
 }
 
-.instruction__img{
+.instruction__img {
   position: absolute;
   max-width: 40px;
 
   top: 50%;
   left: 50%;
 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.instruction__text{
+.instruction__text {
   align-self: center;
 
   margin: 0;
@@ -124,13 +135,10 @@
 
   color: $dark-bluish-black;
 
-
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     align-self: start;
 
     font-size: 16px;
     line-height: 24px;
   }
 }
-
-

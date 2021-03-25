@@ -17,13 +17,13 @@ body {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-img{
-  max-width:100%;
+img {
+  max-width: 100%;
   height: auto;
 }
 
@@ -38,25 +38,25 @@ img{
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
-.container{
+.container {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
 
-  @media (max-width:$viewport-only-mobile) {
+  @media (max-width: $viewport-only-mobile) {
     overflow: hidden;
   }
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     max-width: 748px;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     max-width: 1260px;
   }
 }

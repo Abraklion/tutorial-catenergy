@@ -6,6 +6,10 @@
   @media (min-width: $viewport-tablet) {
     padding-bottom: 72px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    padding-bottom: 82px;
+  }
 }
 
 .questionnaire__title {

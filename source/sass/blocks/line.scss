@@ -1,10 +1,10 @@
 
-.line{
+.line {
   position: relative;
   display: inline-block;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
 
     position: absolute;
     top: 15px;
@@ -17,22 +17,20 @@
   }
 
   @media (max-width: 381px) {
-    &--position__negative{
-
-      &::before{
+    &--position__negative {
+      &::before {
         left: calc(100% - 76px);
       }
     }
   }
 
-  @media (min-width:$viewport-tablet) {
-
-    &::before{
+  @media (min-width: $viewport-tablet) {
+    &::before {
       top: 23px;
     }
 
-    &::after{
-      content: '';
+    &::after {
+      content: "";
 
       position: absolute;
       top: 23px;
