@@ -1,50 +1,65 @@
 
-.example{
+.example {
   background-color: $silver;
 
-  @media (min-width:$viewport-tablet) {
-    background-image: linear-gradient(to top,$silver 462px, $white 462px);
+  @media (min-width: $viewport-tablet) {
+    background-image: linear-gradient(to top, $silver 462px, $white 462px);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    background-image: linear-gradient(to bottom, $white 194px, $silver 194px);
   }
 }
 
-.example__inner{
-
-  @media (min-width:$viewport-tablet) {
+.example__inner {
+  @media (min-width: $viewport-tablet) {
     padding-top: 43px;
     padding-bottom: 64px;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     display: grid;
     grid-template-columns: 1fr 650px;
     grid-column-gap: 134px;
+
+    padding-top: 0;
+    padding-bottom: 70px;
   }
 }
 
-.example__description{
+.example__description {
   margin-bottom: 42px;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 0;
   }
 }
 
-.example__title{
-  @include font(400,36px,40px,'Oswald');
+.example__title {
+  @include font(400,36px,40px,"Oswald");
 
   margin: 27px 0 33px;
 
   color: $black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     margin: 0 0 63px;
 
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    margin-top: 58px;
+    margin-bottom: 146px;
+  }
 }
 
-.example__text{
+.example__text {
   margin: 0 0 25px 0;
 
   font-size: 14px;
@@ -52,37 +67,50 @@
 
   color: $dark-bluish-black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
 
     margin-bottom: 54px;
   }
 
-  p{
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 70px;
+  }
+
+  p {
     padding-right: 12px;
     margin: 0 0 15px 0;
+
+    @media (min-width: $viewport-desktop) {
+      padding-right: 0;
+    }
   }
 }
 
-.example__stats{
-
-  @media (min-width:$viewport-tablet) {
+.example__stats {
+  @media (min-width: $viewport-tablet) {
     display: flex;
     justify-content: space-between;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     flex-direction: column;
   }
 }
 
-.example__stats-inner{
+.example__stats-inner {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $viewport-desktop) {
+    justify-content: flex-start;
+
+    margin-bottom: 55px;
+  }
 }
 
-.example__stats-numbers{
+.example__stats-numbers {
   width: 124px;
 
   position: relative;
@@ -93,22 +121,26 @@
   border: 1px solid $gainsboro;
   border-radius: 3px;
 
-  @include font(400,24px,24px,'Oswald');
+  @include font(400,24px,24px,"Oswald");
 
   text-align: center;
   color: $black;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     width: 162px;
 
     padding: 20px 0;
 
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-right: 42px;
   }
 }
 
@@ -121,13 +153,13 @@
 
   background-color: $silver;
 
-  @include font(400,12px,12px,'Arial');
+  @include font(400,12px,12px,"Arial");
 
   color: $dark-bluish-black;
 
   transform: translateX(-50%);
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     bottom: -6px;
     width: 88%;
 
@@ -138,23 +170,27 @@
     font-size: 14px;
     line-height: 14px;
 
-    .example__stats-numbers:first-child &{
+    .example__stats-numbers:first-child & {
       width: 70%;
     }
   }
+
+  @media (min-width: $viewport-desktop) {
+    background-color: $silver;
+  }
 }
 
-.example__stats-text{
+.example__stats-text {
   margin: 34px 0 0 0;
 
-  @include font(400,14px,20px,'Oswald');
+  @include font(400,14px,20px,"Oswald");
 
   text-align: center;
   text-transform: uppercase;
 
   color: #000000;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     align-self: center;
 
     margin-top: 0;
@@ -165,19 +201,28 @@
     text-align: right;
   }
 
-  br{
+  @media (min-width: $viewport-desktop) {
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  br {
     display: none;
 
-    @media (min-width:$viewport-tablet) {
+    @media (min-width: $viewport-tablet) {
       display: block;
+    }
+
+    @media (min-width: $viewport-desktop) {
+      display: none;
     }
   }
 }
 
-.example__cat{
+.example__cat {
   margin: 0 0 25px 0;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     margin-bottom: 0;
   }
 }

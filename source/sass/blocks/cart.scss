@@ -1,9 +1,9 @@
 
-.cart{
+.cart {
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     flex-direction: column;
 
     padding: 0 37px 40px 39px;
@@ -13,24 +13,23 @@
   }
 }
 
-.cart__header{
+.cart__header {
   flex-basis: 50%;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     flex-basis: auto;
   }
-
 }
 
-.cart__name{
+.cart__name {
   margin: 0 0 18px 0;
 
-  @include font(400,16px,20px,'Oswald');
+  @include font(400,16px,20px,"Oswald");
 
   text-transform: uppercase;
   color: $black-brown;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 20px;
     line-height: 24px;
 
@@ -38,17 +37,17 @@
 
     margin-bottom: 21px;
 
-    br{
+    br {
       display: none;
     }
 
-    span{
+    span {
       display: block;
     }
   }
 }
 
-.cart__list{
+.cart__list {
   @include list;
 
   font-size: 12px;
@@ -56,60 +55,60 @@
 
   color: $dark-bluish-black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 16px;
   }
 }
 
-.cart__item{
+.cart__item {
   display: flex;
   justify-content: space-between;
 
   margin: 0 0 6px 0;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     margin-bottom: 0;
     padding: 9px 0;
 
     border-bottom: 1px solid $gainsboro;
 
-    &:first-child{
+    &:first-child {
       padding-top: 0;
     }
   }
 }
 
-.cart__item-name{
+.cart__item-name {
   margin: 0;
 }
 
-.cart__item-number{
+.cart__item-number {
   margin: 0;
 }
 
-.cart__btn{
+.cart__btn {
   flex-basis: 100%;
 
   margin-top: 22px;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     flex-basis: auto;
 
     margin-top: 33px;
   }
 }
 
-.cart__footer{
+.cart__footer {
   flex-basis: 50%;
   order: -1;
 
   position: relative;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     flex-basis: auto;
     height: 207px;
 
@@ -117,22 +116,22 @@
   }
 }
 
-.cart__img{
+.cart__img {
   max-width: 84px;
   max-height: 101px;
   position: absolute;
   top: 50%;
   left: 50%;
 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     max-width: 172px;
     max-height: 207px;
 
     top: auto;
     bottom: 0;
 
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
   }
 }

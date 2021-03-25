@@ -1,72 +1,69 @@
 
-.additional-products{
+.additional-products {
   overflow-x: hidden;
 }
 
-.additional__inner{
+.additional__inner {
   padding: 28px 0 35px 0;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     padding: 68px 0 76px 0;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    padding: 76px 0 86px 0;
   }
 }
 
-.additional-products__title{
+.additional-products__title {
   margin: 0 0 35px 0;
 
-  @include font(400,24px,24px,'Oswald');
+  @include font(400,24px,24px,"Oswald");
 
   color: $black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 36px;
     line-height: 36px;
 
     margin-bottom: 80px;
     margin-left: 40px;
   }
-
-  @media (min-width:$viewport-desktop) {
-    flex-basis: 100%;
-  }
-
 }
 
-.additional-products__list{
+.additional-products__list {
   @include list;
 
-  @media (max-width:$viewport-only-mobile) {
+  @media (max-width: $viewport-only-mobile) {
     margin-bottom: 39px;
   }
 
-  @media (min-width:$viewport-tablet) and (max-width:1279px){
+  @media (min-width: $viewport-tablet) and (max-width: 1279px) {
     margin-bottom: 70px;
 
     border-left: 1px solid $gainsboro;
     border-right: 1px solid $gainsboro;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     flex-basis: 896px;
   }
 }
 
-.additional-products__item{
+.additional-products__item {
   padding: 13px 0 19px 0;
 
   border-bottom: 1px solid $gainsboro;
 
-  &:first-child{
+  &:first-child {
     border-top: 1px solid $gainsboro;
   }
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -74,20 +71,22 @@
     padding: 26px 38px 28px;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     justify-content: flex-start;
+
+    padding: 15px 0 17px 0;
   }
 }
 
-.additional-products__name{
+.additional-products__name {
   margin: 0 0 13px 0;
 
-  @include font(400,16px,16px,'Oswald');
+  @include font(400,16px,16px,"Oswald");
 
   text-transform: uppercase;
   color: $black-brown;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     align-self: center;
 
     font-size: 20px;
@@ -96,14 +95,13 @@
     margin-bottom: 0;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     flex-basis: 27.34%;
     margin-right: auto;
   }
-
 }
 
-.additional-products__content{
+.additional-products__content {
   display: flex;
   justify-content: space-between;
 
@@ -114,7 +112,7 @@
 
   color: $dark-bluish-black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     align-self: center;
 
     margin-bottom: 0;
@@ -123,46 +121,46 @@
     line-height: 20px;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     flex-basis: 31.81%;
     margin-right: 40px;
   }
 }
 
-.additional-products__quantity{
+.additional-products__quantity {
   margin: 0;
 
-
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     margin-right: 50px;
   }
 }
 
-.additional-products__price{
+.additional-products__price {
   margin: 0;
 }
 
-.additional-products__button{
+.additional-products__button {
   width: 100%;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     flex-basis: 100%;
 
     margin-top: 28px;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     flex-basis: 27.34%;
+
+    margin-top: 0;
   }
 }
 
-.additional-products__gift{
-
-  @media (max-width:$viewport-only-mobile) {
+.additional-products__gift {
+  @media (max-width: $viewport-only-mobile) {
     margin: 0 auto;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
     flex-basis: 245px;
   }
 }

@@ -1,12 +1,12 @@
 
-.footer{
+.footer {
   background-color: $basic-grey;
 }
 
-.footer__inner{
+.footer__inner {
   padding: 39px 0 22px 0;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     display: grid;
     grid-template-columns: max-content max-content max-content;
     justify-content: space-between;
@@ -14,11 +14,15 @@
 
     padding: 55px 0 61px 0;
   }
+
+
+  @media (min-width: $viewport-desktop) {
+    padding: 57px 0 58px 0;
+  }
 }
 
-.footer__logo{
-
-  @media (max-width:$viewport-only-mobile) {
+.footer__logo {
+  @media (max-width: $viewport-only-mobile) {
     width: 128px;
     height: 24px;
 
@@ -26,9 +30,8 @@
   }
 }
 
-.footer__social{
-
-  @media (max-width:$viewport-only-mobile) {
+.footer__social {
+  @media (max-width: $viewport-only-mobile) {
     padding: 20px 0 21px;
     margin: 0 0 22px 0;
   }

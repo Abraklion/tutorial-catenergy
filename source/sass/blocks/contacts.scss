@@ -1,26 +1,24 @@
 
-.contacts{
-
-  &--bg_grey{
+.contacts {
+  &--bg_grey {
     background-color: $basic-grey;
   }
 }
 
-.contacts__container{
-
-  @media (min-width:$viewport-desktop) {
+.contacts__container {
+  @media (min-width: $viewport-desktop) {
     position: relative;
   }
 }
 
-.contacts__inner{
+.contacts__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
   padding: 28px 0 22px 0;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     grid-template-columns: 170px 160px;
     align-items: start;
     justify-content: space-between;
@@ -28,27 +26,30 @@
     padding: 66px 42px 58px 41px;
   }
 
-  @media (min-width:$viewport-desktop) {
+  @media (min-width: $viewport-desktop) {
+    grid-column-gap: 87px;
+
     position: absolute;
     top: 95px;
     left: 20px;
 
+    padding: 66px 89px 53px 76px;
+
     background-color: $white;
   }
-
 }
 
-.contacts__title{
+.contacts__title {
   margin: 0;
   padding: 0 15px 0 0;
 
-  @include font(400,16px,20px,'Oswald');
+  @include font(400,16px,20px,"Oswald");
 
   text-transform: uppercase;
 
   color: $almost-black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 20px;
     line-height: 24px;
 
@@ -56,25 +57,30 @@
   }
 }
 
-.contacts__address{
+.contacts__address {
   justify-self: end;
 
   font-style: normal;
-  @include font(400,14px,20px,'Arial');
+
+  @include font(400,14px,20px,"Arial");
 
   color: $dark-bluish-black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 20px;
 
     text-align: right;
 
-    span{
+    span {
       display: inline-block;
       vertical-align: middle;
 
       margin-top: 20px;
     }
+  }
+
+  @media (min-width: $viewport-desktop) {
+    text-align: left;
   }
 }

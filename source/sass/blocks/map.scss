@@ -1,15 +1,15 @@
 
-.map{
+.map {
   height: 362px;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     height: 400px;
   }
 
-  iframe{
+  iframe {
     border: 0;
 
-    @media (min-width:$viewport-tablet) {
+    @media (min-width: $viewport-tablet) {
       height: inherit;
     }
   }

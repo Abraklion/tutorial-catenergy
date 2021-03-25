@@ -1,12 +1,16 @@
 
-.page{
+.page {
   height: 100%;
 }
 
-.page__body{
+.page__body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   grid-template-columns: 1fr;
   align-content: start;
+
+  @media (min-width: $viewport-desktop) {
+    position: relative;
+  }
 }

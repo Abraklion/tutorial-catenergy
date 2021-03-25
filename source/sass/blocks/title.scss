@@ -33,6 +33,11 @@
     line-height: 60px;
   }
 
+
+  @media (min-width: $viewport-desktop) {
+    margin-top: 74px;
+  }
+
   &--form {
     @media (max-width: $viewport-only-mobile) {
       padding-top: 27px;
@@ -41,6 +46,11 @@
 
     @media (min-width: $viewport-tablet) {
       margin-bottom: 54px;
+    }
+
+
+    @media (min-width: $viewport-desktop) {
+      margin-bottom: 56px;
     }
   }
 }

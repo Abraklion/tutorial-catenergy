@@ -149,7 +149,6 @@ exports.watcher = watcher;
 // Копируем файлы
 const copy = () => {
   return gulp.src([
-      config.paths.html,
       config.paths.fonts,
       config.paths.js,
       config.paths.ico,

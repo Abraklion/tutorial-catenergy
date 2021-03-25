@@ -1,19 +1,19 @@
 
-.menu{
+.menu {
   @include list;
 
   font-weight: 500;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
 
   text-transform: uppercase;
 
-  @media (max-width:$viewport-only-mobile) {
+  @media (max-width: $viewport-only-mobile) {
     text-align: center;
   }
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     display: flex;
     flex-wrap: wrap;
 
@@ -21,15 +21,33 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--color_white {
+    @media (min-width: $viewport-desktop) {
+      .menu__link {
+        color: $white;
+      }
+
+      .menu__link--active {
+        &::before {
+          background-color: $white;
+        }
+      }
+    }
+  }
 }
 
-.menu__item{
-
-  @media (max-width:$viewport-only-mobile) {
+.menu__item {
+  @media (max-width: $viewport-only-mobile) {
     position: relative;
 
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       top: 0;
       left: 50%;
@@ -40,17 +58,16 @@
     }
   }
 
-  @media (min-width:$viewport-tablet) {
-    margin:0 36px 0 0;
+  @media (min-width: $viewport-tablet) {
+    margin: 0 36px 0 0;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
-
 }
 
-.menu__link{
+.menu__link {
   display: inline-block;
   vertical-align: middle;
 
@@ -59,31 +76,30 @@
   text-decoration: none;
   color: $black;
 
-  @media (min-width:$viewport-tablet) {
+  @media (min-width: $viewport-tablet) {
     opacity: 1;
 
     transition: opacity 0.2s;
 
     padding: 14px 0 10px 0;
 
-    &:hover{
-      opacity: .6;
+    &:hover {
+      opacity: 0.6;
     }
 
-    &:active{
-      opacity: .3;
+    &:active {
+      opacity: 0.3;
     }
   }
 
-  &--active{
+  &--active {
     position: relative;
     pointer-events: none;
     cursor: default;
 
-    @media (min-width:$viewport-tablet) {
-
-      &::before{
-        content: '';
+    @media (min-width: $viewport-tablet) {
+      &::before {
+        content: "";
 
         position: absolute;
         left: 0;

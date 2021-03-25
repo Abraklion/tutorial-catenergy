@@ -15,7 +15,7 @@
 
   <body class="page__body">
 
-    <header class="header">
+    <header class="header header--position_absolute">
       <div class="container">
         <div class="header__inner">
 
@@ -41,17 +41,17 @@
 
           </div><!-- /.header__top -->
 
-          <nav class="header__nav">
+          <nav class="header__nav js-nav">
 
-            <ul class="menu">
+            <ul class="menu menu--color_white">
               <li class="menu__item">
-                <a href="" class="menu__link menu__link--active">главная</a>
+                <a class="menu__link menu__link--active">главная</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">каталог продукции</a>
+                <a class="menu__link" href="catalog.html" >каталог продукции</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">подбор программы</a>
+                <a class="menu__link" href="form.html" >подбор программы</a>
               </li>
             </ul><!-- /.menu -->
 
@@ -179,12 +179,8 @@
             <div class="example__cat progress">
 
               <div class="progress__img-inner">
-                <div class="progress__img progress__img--before">
-                  <img src="img/cat-before-mobile.png" width="282" height="232" alt="Жирный кот">
-                </div>
-                <div class="progress__img progress__img--after">
-                  <img src="img/cat-after-mobile.png" width="251" height="240" alt="Жирный кот">
-                </div>
+                <div class="progress__img progress__img--before" role="img" aria-label="Жирный кот"></div>
+                <div class="progress__img progress__img--after" role="img" aria-label="Дохлый кот"></div>
               </div>
 
               <div class="progress__bar">
@@ -279,5 +275,6 @@
       </div><!-- /.contacts -->
     </div><!-- /.footer -->
 
+    <script src="js/script.js"></script>
   </body>
 </html>
